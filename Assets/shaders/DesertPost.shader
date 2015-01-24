@@ -78,7 +78,7 @@ half4 frag (v2f i) : COLOR{
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
 	c.g =lerp(c.g,c.g*max(0.01,(1-depthValue)) + depthValue*_Color.g , _FogStrength); 
 	c.b =lerp(c.b,c.b*max(0.01,(1-depthValue)) + depthValue*_Color.b , _FogStrength);
-	c*= clamp(darken,0.6,1);
+	c*= clamp(darken,0.4,1.0);
 //	c+=float4(border,border,border,border);
     depth.a = 1;
     return c;
