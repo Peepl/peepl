@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Cavern : MonoBehaviour {
+public class Oasis : MonoBehaviour {
 
     GameColor Color;
 
@@ -10,7 +10,6 @@ public class Cavern : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Color = GameColor.Blue;
-        GameObject swarm = GameObject.Find("Swarm");
         //bool colorFriendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
         bool colorFriendly = true;
         float goodChance = colorFriendly ? 0.75f : 0.25f;

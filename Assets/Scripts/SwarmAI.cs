@@ -23,7 +23,7 @@ public class SwarmAI : MonoBehaviour {
 
     public void InitSwarm(GameObject leader)
     {
-        TribeColor = GameColor.White;
+        TribeColor = GameColor.Red;
 
         Debug.Log("initing swarm");
         m_People = new List<GameObject>();
