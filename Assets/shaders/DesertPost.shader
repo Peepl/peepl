@@ -21,6 +21,8 @@ sampler2D _Noise;
 float4 _Color;
 float _PerlinStrength;
 float _FogStrength;
+float2 _Center;
+float _Angle;
 
 struct v2f {
    float4 pos : SV_POSITION;
@@ -53,13 +55,27 @@ half4 frag (v2f i) : COLOR{
    	
    	float4 c = tex2D(_MainTex, i.uv);
 	
-	 
+	float dx = _Center.x - i.uv.x;
+	float dy = (_Center.y - i.uv.y)/1.3;
+	float dist = sqrt(dx*dx + dy*dy);
+	
+//	_FogStrength = clamp(0,1,_FogStrength-(1-dist/3.0));
+	
+	//_FogStrength = dist>0.1? smoothstep(0.0,_FogStrength, (dist-0.1)*2)+_FogStrength/6.0:_FogStrength/6.0;
+	//_FogStrength = 0;
+	float smooth = 1.0-smoothstep(0.0,1.0, (dist)*(4.25+p.r*2));
+	float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
+	smooth = smooth > 0.54 && smooth < 0.57 ? 73.0 : smooth;
+	float darken = dist>0.05? smooth :1.0;
+	darken +=0.6;
+	darken = clamp(0, 1, darken);
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
 	c.g =lerp(c.g,c.g*max(0.01,(1-depthValue)) + depthValue*_Color.g , _FogStrength); 
 	c.b =lerp(c.b,c.b*max(0.01,(1-depthValue)) + depthValue*_Color.b , _FogStrength);
-
-   depth.a = 1;
-   return c;
+	c*= darken;
+//	c+=float4(border,border,border,border);
+    depth.a = 1;
+    return c;
 }
 ENDCG
 }
