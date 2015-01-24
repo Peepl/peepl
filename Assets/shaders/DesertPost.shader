@@ -49,7 +49,7 @@ half4 frag (v2f i) : COLOR{
    float depthValue = Linear01Depth (tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.scrPos)).r);
    half4 depth;
 	float4 n = tex2D(_Noise, i.uv*2.0);
-	float4 p = tex2D(_Perlin, i.uv);//+float2(_POffX, _POffY)*0.02);
+	float4 p = tex2D(_Perlin, i.uv*0.5+float2(_POffX, _POffY)*0.005);
 	p.r = p.r * n.x*_PerlinStrength;
 	//depthValue =clamp(depthValue+depthValue*p.r, 0.0, 1.0);
    	depth.r = depthValue;

@@ -34,7 +34,7 @@ public class Obelisk : MonoBehaviour {
                 GameObject swarm = GameObject.Find("Swarm");
                 SwarmAI swarmai = swarm.GetComponent<SwarmAI>();
                 swarm.GetComponent<SwarmAI>().Bless();
-				transform.Find("obelisk").Find("obeliski").Find("bad").gameObject.SetActive(true);
+			//	transform.Find("obelisk").Find("obeliski").Find("bad").gameObject.SetActive(true);
 
                 Debug.Log("Friendly obelisk triggered");
             }
