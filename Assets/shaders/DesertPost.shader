@@ -23,6 +23,7 @@ float _PerlinStrength;
 float _FogStrength;
 float2 _Center;
 float _Angle;
+float _Day;
 
 struct v2f {
    float4 pos : SV_POSITION;
@@ -66,19 +67,19 @@ half4 frag (v2f i) : COLOR{
 //	_FogStrength = dist>0.1? smoothstep(0.0,_FogStrength, (dist-0.1)*2)+_FogStrength/6.0:_FogStrength/6.0;
 	//_FogStrength = 0;
 	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.12)*(4.25+p.r*2));
-	float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
+	//float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
 	//smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
-	_FogStrength *= 1-smooth*0.1;
+	_FogStrength *= 1-smooth*0.31;
 	_FogStrength+=p.r;
 	float darken = dist>0.12? smooth :1.0;
-	darken +=0.05;
-	darken = clamp(0, 1, darken);
+	darken +=_Day;
+	darken = clamp(darken,0, 1);
 	
 	c*= darken;
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
 	c.g =lerp(c.g,c.g*max(0.01,(1-depthValue)) + depthValue*_Color.g , _FogStrength); 
 	c.b =lerp(c.b,c.b*max(0.01,(1-depthValue)) + depthValue*_Color.b , _FogStrength);
-	crgb=darken;// clamp(darken,0.4,1.0);
+	c*= clamp(darken*p.r,0.8,1.0);
 //	c+=float4(border,border,border,border);
     depth.a = 1;
     return c;
