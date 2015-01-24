@@ -4,6 +4,7 @@ using System.Collections;
 public class LeaderAI : MonoBehaviour {
 
     public Vector3 target;
+    private float cachedAngle = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,13 @@ public class LeaderAI : MonoBehaviour {
         {
             rigidbody.velocity = 10.0f * rigidbody.velocity.normalized;
         }
-	
+
+        transform.rotation = Quaternion.identity;
+
+        if (rigidbody.velocity.magnitude > 1.0f)
+        {
+            cachedAngle = Mathf.Atan2(rigidbody.velocity.x, rigidbody.velocity.z);
+        }
+        transform.localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
 	}
 }
