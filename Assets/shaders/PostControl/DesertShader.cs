@@ -4,19 +4,20 @@
 [AddComponentMenu("Image Effects/DesertShader")]
 public class DesertShader : ImageEffectBase {
 
-	public float strength;
+	public float perlinStrength;
 	public Color desertColor;
 	public Texture noise;
 	public float speedX;
 	public float speedY;
+	public float fogStrength;
 
 	private PerlinNoise perlin;
 
 	// Called by camera to apply image effect
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
 		perlin.update(speedX,speedY);
-		material.SetFloat("_Strength", strength);
-//		material.SetFloat("_SpeedX", speedX);
+		material.SetFloat("_PerlinStrength", perlinStrength);
+		material.SetFloat("_FogStrength", fogStrength);
 //		material.SetFloat("_SpeedY", speedY);
 		material.SetColor("_Color", desertColor);
 		material.SetTexture("_Perlin", perlin.noiseTex);
