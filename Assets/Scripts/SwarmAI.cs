@@ -7,7 +7,7 @@ public class SwarmAI : MonoBehaviour {
     public GameObject CitizenPrefab;
 	public GameObject BloodPrefab;
 
-    public int People = 75;
+    public int People = 25;
     public int Morale = 100;
     public GameColor TribeColor;
 

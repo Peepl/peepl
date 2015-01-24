@@ -94,7 +94,7 @@ public class WorldGenerator : MonoBehaviour {
 		if (mapData == null) {
 			GenerateMapData();
 		}
-
+        /*
 		if (Application.isEditor) {
 
 			var children = new List<GameObject>();
@@ -102,7 +102,7 @@ public class WorldGenerator : MonoBehaviour {
 			children.ForEach(child => DestroyImmediate(child.gameObject));
 		
 			currentTiles.Clear();
-		}
+		}*/
         
 		frameIndex = frameIndex + 1;
 
@@ -157,12 +157,12 @@ public class WorldGenerator : MonoBehaviour {
 		for (int i = 0; i < currentTiles.Count; i++) {
 		
 			if (currentTiles[i].frameIndex != frameIndex) {
-
+                /*
 				if (Application.isEditor) {
 					DestroyImmediate(currentTiles[i].gameObject);
-				} else {
+				} else {*/
 					Destroy(currentTiles[i].gameObject);
-				}
+				/*}*/
 			} 
 		}
 
