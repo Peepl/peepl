@@ -12,6 +12,7 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
+    private float m_MoraleLossSpeed = 0.005f;
     public GameObject Leader;
 
 	// Use this for initialization
@@ -36,9 +37,16 @@ public class SwarmAI : MonoBehaviour {
         }
 	}
 
+    public void Bless()
+    {
+        m_MoraleLossSpeed *= 0.75f;
+    }
+
     public void AddPerson(GameObject leader)
     {
-        GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
+        Vector3 offset = PersonAI.GetRandomOffset();
+        offset.y = 10.0f;
+        GameObject tmp = Instantiate(CitizenPrefab, offset, Quaternion.identity) as GameObject;
         tmp.transform.parent = this.transform;
         tmp.GetComponent<PersonAI>().Leader = leader;
         m_People.Add(tmp);
