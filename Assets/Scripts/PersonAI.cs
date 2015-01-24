@@ -26,7 +26,7 @@ public class PersonAI : MonoBehaviour {
 	
     void OnCollisionEnter(Collision collision)
     {
-        if ( !collision.gameObject.name.Equals("person") )
+        if ( !collision.gameObject.tag.Equals("person") && !collision.gameObject.tag.Equals("Ground") )
         {
             rigidbody.AddForce(10.0f * (transform.position - collision.gameObject.transform.position) );
         }
@@ -39,12 +39,11 @@ public class PersonAI : MonoBehaviour {
             offset = GetRandomOffset();
         }
 
-        //rigidbody.velocity = Leader.transform.position - transform.position;
         Vector3 v = offset + Leader.transform.position - transform.position;
         float mag = 0.0f;
         if (v.magnitude > 10.0f && v.magnitude < 150.0f)
         {
-            mag = 60.0f / Mathf.Max(1.0f, v.magnitude);
+            mag = 200.0f / Mathf.Max(1.0f, v.magnitude);
         }
         v.Normalize();
         rigidbody.AddForce( mag * v );
