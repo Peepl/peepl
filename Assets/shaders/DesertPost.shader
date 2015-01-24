@@ -72,13 +72,13 @@ half4 frag (v2f i) : COLOR{
 	_FogStrength+=p.r;
 	float darken = dist>0.12? smooth :1.0;
 	darken +=0.05;
-	darken = clamp(0, 1, darken);
+	darken = clamp(darken,0, 1);
 	
 	c*= darken;
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
 	c.g =lerp(c.g,c.g*max(0.01,(1-depthValue)) + depthValue*_Color.g , _FogStrength); 
 	c.b =lerp(c.b,c.b*max(0.01,(1-depthValue)) + depthValue*_Color.b , _FogStrength);
-	crgb=darken;// clamp(darken,0.4,1.0);
+	c*= clamp(darken,0.8,1.0);
 //	c+=float4(border,border,border,border);
     depth.a = 1;
     return c;

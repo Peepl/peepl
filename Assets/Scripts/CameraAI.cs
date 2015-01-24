@@ -25,7 +25,7 @@ public class CameraAI : MonoBehaviour {
         storm.perlinStrength = 0.5f * stormSeverity+0.3f;
         storm.speedX = 0.2f * stormSeverity+0.02f;
         storm.speedY = 0.2f * stormSeverity+0.02f;
-		storm.desertColor = new Color(39,19,0) * stormSeverity;
+		storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0) ;
         storm.fogStrength = Mathf.Min (1.0f,stormSeverity+0.4f);
 	
 	}
