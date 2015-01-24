@@ -12,7 +12,7 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
-    private float m_MoraleLossSpeed = 0.001f;
+    private float m_MoraleLossSpeed = 0.002f;
     public GameObject Leader;
 
 	// Use this for initialization

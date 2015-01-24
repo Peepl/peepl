@@ -128,6 +128,36 @@ public class WorldGenerator : MonoBehaviour {
 		return true;
     
 	}
+
+	Vector3 GetTileWorldPos(int blockX, int blockZ, int tileX, int tileZ, int size) {
+
+		float blockWorldSize = blockSize * tileSize;
+
+		Vector3 worldPos = new Vector3(-(float)maxSize * tileSize / 2.0f + (float)blockX * blockWorldSize,
+		                               0.0f,
+		                               -(float)maxSize * tileSize / 2.0f + (float)blockZ * blockWorldSize);
+
+		Vector3 localPos = new Vector3(
+			-(float)blockSize * tileSize / 2.0f + (float)tileX * tileSize + (float)(size) * (float)tileSize / 2.0f,
+			0.0f,
+			-(float)blockSize * tileSize / 2.0f + (float)tileZ * tileSize + (float)(size) * (float)tileSize / 2.0f
+			);
+		
+		return worldPos + localPos;
+
+	}
+
+	bool IsCenterTile(int blockX, int blockZ, int tileX, int tileZ, int size) {
+
+		Vector3 pos = GetTileWorldPos(blockX, blockZ, tileX, tileZ, size);
+
+		if (Vector3.Distance(pos, Vector3.zero) < 100) {
+			return true;
+		}
+
+		return false;
+
+	}
     
     void CreateBlock(int blockX, int blockZ) {
 
@@ -152,7 +182,11 @@ public class WorldGenerator : MonoBehaviour {
 		for (int z = 0; z < blockSize; z++) {
 			for (int x = 0; x < blockSize; x++) {
 
-				int tileType = GetRandomTileType();
+				int tileType = 0; 
+
+				if (!IsCenterTile(blockX, blockZ, x, z, 1)) {
+					tileType = GetRandomTileType();
+				}
 
 				TileInfo info = tileInfo[tileType];
                 
