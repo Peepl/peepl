@@ -23,7 +23,7 @@ public class WorldGenerator : MonoBehaviour {
 
 	public int seed = 1234;
 
-	private int maxTiles = 128;
+	private float specialDistribution = 0.2f;
 	
 	private float killDistance = 800.0f;
 
@@ -38,6 +38,8 @@ public class WorldGenerator : MonoBehaviour {
 	private List<TileInfo> tileInfo = new List<TileInfo>();
 
 	private List<Block> blocks = new List<Block>();
+
+	private Dictionary<int, int> tileTypesInScene = new Dictionary<int, int>();
 	
 	public void Init(GameObject leaderGameObject) {
 		leaderTransform = leaderGameObject.transform;			
@@ -86,19 +88,35 @@ public class WorldGenerator : MonoBehaviour {
 		}	
 	}
 
-	TileInfo GetRandomTile() {
-	
-		int tileType = Random.Range(0, tileInfo.Count);
-		
-		TileInfo info = tileInfo[tileType];
-    	
-		return info;
+	int GetRandomTileType() {
+
+		int tileType = 0;
+
+		if (Random.value < specialDistribution) {
+
+			tileType = Random.Range(1, tileInfo.Count);
+
+			int count;
+
+			if (tileTypesInScene.TryGetValue(tileType, out count)) {
+
+				/*if (count >= tileInfo[tileType].maxCount) {
+					return 0;
+				}*/
+
+				tileTypesInScene[tileType] = count + 1;
+
+			} else {
+			
+				tileTypesInScene.Add(tileType, 1);
+			}
+		}
+
+		return tileType;
 	}
 
 	bool TestFit(int[] tiles, int size, int x, int z) {
 	
-		bool canAdd = true;
-		
 		for (int tz = 0; tz < size; tz++) {
 			for (int tx = 0; tx < size; tx++) {
 				if (tiles[(x + tx) + (z + tz) * blockSize] != -1) {
@@ -134,7 +152,7 @@ public class WorldGenerator : MonoBehaviour {
 		for (int z = 0; z < blockSize; z++) {
 			for (int x = 0; x < blockSize; x++) {
 
-				int tileType = Random.Range(0, tileInfo.Count);
+				int tileType = GetRandomTileType();
 
 				TileInfo info = tileInfo[tileType];
                 
