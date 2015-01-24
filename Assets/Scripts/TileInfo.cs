@@ -7,6 +7,8 @@ public class TileInfo : MonoBehaviour {
 
 	public bool canRotate;
 
+	public int maxCount = 1;
+
 	// Use this for initialization
 	void Start () {
 	
