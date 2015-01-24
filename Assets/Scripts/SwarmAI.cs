@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SwarmAI : MonoBehaviour {
 
@@ -7,7 +8,7 @@ public class SwarmAI : MonoBehaviour {
 
     public int People = 75;
 
-    private GameObject[] m_People;
+    private List<GameObject> m_People;
 	// Use this for initialization
 	void Start () {
     }
@@ -15,20 +16,39 @@ public class SwarmAI : MonoBehaviour {
     public void InitSwarm(GameObject leader)
     {
         Debug.Log("initing swarm");
-        m_People = new GameObject[200];
+        m_People = new List<GameObject>();
         for (int i = 0; i < People; ++i)
         {
-            GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
-            tmp.GetComponent<PersonAI>().Leader = leader;
-            m_People[i] = tmp;
+            AddPerson(leader);
         }
 	}
-	
+
+    public void AddPerson(GameObject leader)
+    {
+        GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
+        tmp.GetComponent<PersonAI>().Leader = leader;
+        m_People.Add(tmp);
+    }
+
+    public void KillInRadius(Vector3 center, float radius, float chance)
+    {
+        for (int i = 0; i < m_People.Count; ++i)
+        {
+            GameObject p = m_People[i];
+            if ((p.transform.position - center).magnitude <= radius && Random.Range(0.0f, 1.0f) < chance)
+            {
+                m_People.Remove(p);
+                Destroy(p);
+                i--;
+            }
+        }
+    }
+
 	// Update is called once per frame
 	void Update () {
-        for (int i = 0; i < People; ++i)
+        for (int i = 0; i < m_People.Count-1; ++i)
         {
-            for (int j = i + 1; j < People; ++j)
+            for (int j = i + 1; j < m_People.Count; ++j)
             {
                 Vector3 p1 = m_People[i].transform.position;
                 Vector3 p2 = m_People[j].transform.position;
