@@ -6,8 +6,10 @@ public class PersonAI : MonoBehaviour {
     public GameObject Leader;
 
     private Vector3 offset;
-    public static float Radius = 25.0f;
+    public static float Radius = 15.0f;
     public static float MaxVelo = 5.0f;
+
+    public bool IsSheltered;
 
     public static Vector3 GetRandomOffset()
     {
@@ -41,7 +43,7 @@ public class PersonAI : MonoBehaviour {
 
         Vector3 v = offset + Leader.transform.position - transform.position;
         float mag = 0.0f;
-        if (v.magnitude > 10.0f && v.magnitude < 150.0f)
+        if (v.magnitude > 5.0f && v.magnitude < 50.0f)
         {
             mag = 200.0f / Mathf.Max(1.0f, v.magnitude);
         }
@@ -52,5 +54,6 @@ public class PersonAI : MonoBehaviour {
         {
             rigidbody.velocity = MaxVelo * rigidbody.velocity.normalized;
         }
+        transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 	}
 }

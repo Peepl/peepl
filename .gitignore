@@ -19,3 +19,5 @@ sysinfo.txt
 AnssiScene.*
 
 .DS_Store
+/AndroidBuild
+/WBBuild
