@@ -8,6 +8,8 @@ public class SwarmAI : MonoBehaviour {
 	public GameObject BloodPrefab;
 
     public int People = 75;
+    public int Morale = 100;
+    public GameColor TribeColor;
 
     private List<GameObject> m_People;
 	// Use this for initialization
@@ -16,6 +18,8 @@ public class SwarmAI : MonoBehaviour {
 
     public void InitSwarm(GameObject leader)
     {
+        TribeColor = GameColor.White;
+
         Debug.Log("initing swarm");
         m_People = new List<GameObject>();
         for (int i = 0; i < People; ++i)
@@ -29,6 +33,22 @@ public class SwarmAI : MonoBehaviour {
         GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
         tmp.GetComponent<PersonAI>().Leader = leader;
         m_People.Add(tmp);
+    }
+
+    public void StormDamage(float severity)
+    {
+        if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
+        //if (Random.Range(0.0f, 50.0f) < severity)
+        {
+            int randIndex = Random.Range(0, m_People.Count);
+            GameObject p = m_People[randIndex];
+            if ( !p.GetComponent<PersonAI>().IsSheltered)
+            {
+                Debug.Log("Storm kill!");
+                m_People.Remove(p);
+                Destroy(p);
+            }
+        }
     }
 
     public void KillInRadius(Vector3 center, float radius, float chance)
