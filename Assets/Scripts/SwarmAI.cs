@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class SwarmAI : MonoBehaviour {
 
     public GameObject CitizenPrefab;
+	public GameObject BloodPrefab;
 
     public int People = 75;
 
@@ -37,6 +38,8 @@ public class SwarmAI : MonoBehaviour {
             GameObject p = m_People[i];
             if ((p.transform.position - center).magnitude <= radius && Random.Range(0.0f, 1.0f) < chance)
             {
+				//Add blood
+				GameObject blood = Instantiate(BloodPrefab, p.transform.position, p.transform.rotation) as GameObject;
                 m_People.Remove(p);
                 Destroy(p);
                 i--;
