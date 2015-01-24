@@ -222,9 +222,15 @@ public class WorldGenerator : MonoBehaviour {
 			block.enabled = true;
 
 			for (int i = 0; i < block.tiles.Count; i++) {
+				Quaternion rot = Quaternion.identity;
+
+				if (block.tiles[i].tileType > 0) {
+					rot = Quaternion.Euler(-90, -180, 0);
+				}
+
 				block.tiles[i].gameObject = 
 					Instantiate(prefabs[block.tiles[i].tileType], 
-					            block.worldPos + block.tiles[i].localPos, Quaternion.Euler(-90, -180, 0)) as GameObject;
+					            block.worldPos + block.tiles[i].localPos, rot) as GameObject;
 			}
 		}
 
