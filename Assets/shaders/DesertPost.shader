@@ -55,8 +55,10 @@ half4 frag (v2f i) : COLOR{
    	
    	float4 c = tex2D(_MainTex, i.uv);
 	
+	float aspect = _ScreenParams.x/_ScreenParams.y;
+	
 	float dx = _Center.x - i.uv.x;
-	float dy = (_Center.y - i.uv.y)/1.3;
+	float dy = (_Center.y - i.uv.y)/aspect*2;
 	float dist = sqrt(dx*dx + dy*dy);
 	
 //	_FogStrength = clamp(0,1,_FogStrength-(1-dist/3.0));
