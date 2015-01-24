@@ -12,6 +12,8 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
+    public GameObject Leader;
+
 	// Use this for initialization
 	void Start () {
     }
@@ -23,7 +25,8 @@ public class SwarmAI : MonoBehaviour {
 
     public void InitSwarm(GameObject leader)
     {
-        TribeColor = GameColor.Red;
+        TribeColor = GameColor.Blue;
+        Leader = leader;
 
         Debug.Log("initing swarm");
         m_People = new List<GameObject>();
