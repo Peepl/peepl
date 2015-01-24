@@ -13,6 +13,8 @@ public class OrbEvent : MonoBehaviour {
 		orbTransform = transform.FindChild("EvilSphere");
 
 		orbTransform.gameObject.SetActive(false);
+
+		active = true;
 	}
 	
 	// Update is called once per frame
