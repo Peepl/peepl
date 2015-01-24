@@ -10,7 +10,7 @@ public class PersonAI : MonoBehaviour {
     private float cachedAngle;
 
     public static float Radius = 15.0f;
-    public static float MaxVelo = 5.0f;
+    public static float MaxVelo = 7.0f;
 
     public bool IsSheltered;
 
@@ -52,15 +52,15 @@ public class PersonAI : MonoBehaviour {
         if (xzDistSquared < 40.0f)
         {
             mag = -100.0f / Mathf.Max(1.0f, xzDistSquared);
-        } else if (xzDistSquared < 1000000.0f)
+        } else if (xzDistSquared < 2000000.0f)
         {
-            float morale = m_Swarm.GetComponent<SwarmAI>().Morale;
-            mag = morale * 2.0f / Mathf.Sqrt(xzDistSquared);
+            float morale = 0.01f * m_Swarm.GetComponent<SwarmAI>().Morale;
+            mag = 100.0f * Mathf.Sqrt(morale) * 2.5f / Mathf.Sqrt(xzDistSquared);
         }
         v.Normalize();
         //rigidbody.AddForce( morale * mag * v );
         rigidbody.AddForce(mag * v);
-        rigidbody.AddForce(1.2f * offset);
+        rigidbody.AddForce(1.1f * offset);
 
         if (rigidbody.velocity.magnitude > MaxVelo)
         {

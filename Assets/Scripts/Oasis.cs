@@ -34,9 +34,9 @@ public class Oasis : MonoBehaviour {
                 int bonuspeople = Random.Range(2, 6);
                 for (int i = 0; i < bonuspeople; ++i)
                 {
-                    swarmai.AddPerson(swarmai.Leader);
+                    swarmai.Morale = 100.0f;
+                    GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 }
-                swarm.GetComponent<SwarmAI>().Morale += 30;
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
             }
@@ -45,7 +45,8 @@ public class Oasis : MonoBehaviour {
                 // show unfriendly effect here (change model to skeletons)
                 GameObject swarm = GameObject.Find("Swarm");
                 swarm.GetComponent<SwarmAI>().Morale -= 20;
-				transform.Find("bad").gameObject.SetActive(true);
+                GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
+                transform.Find("bad").gameObject.SetActive(true);
                 Debug.Log("Unfriendly oasis triggered");
             }
         }
