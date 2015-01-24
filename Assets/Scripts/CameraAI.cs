@@ -5,6 +5,7 @@ public class CameraAI : MonoBehaviour {
 
     public GameObject leader;
     public float Distance = 10.0f;
+	public float Height = 15.0f;
 
 	private float dayNightCycle = 0f;
 
@@ -13,12 +14,11 @@ public class CameraAI : MonoBehaviour {
         camera.depthTextureMode = DepthTextureMode.Depth;
         camera.nearClipPlane = 15.0f;
         camera.farClipPlane = 140.0f;
-        transform.position = new Vector3(0.0f, Distance, Distance);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(leader.transform.position.x-Distance, leader.transform.position.y + Distance, leader.transform.position.z - Distance);
+        transform.position = new Vector3(leader.transform.position.x+Distance, leader.transform.position.y + Height, leader.transform.position.z - Distance);
         transform.LookAt(leader.transform.position);
 
         float stormSeverity = GameObject.Find("GameManager").GetComponent<SandStorm>().Severity;
