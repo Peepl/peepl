@@ -25,9 +25,9 @@ public class WorldGenerator : MonoBehaviour {
 
 	private int maxTiles = 128;
 	
-	private float killDistance = 400.0f;
+	private float killDistance = 800.0f;
 
-	private float appearDistance = 300.0f;
+	private float appearDistance = 500.0f;
 	
 	private int maxSize = 16;
 
@@ -102,7 +102,6 @@ public class WorldGenerator : MonoBehaviour {
 		for (int tz = 0; tz < size; tz++) {
 			for (int tx = 0; tx < size; tx++) {
 				if (tiles[(x + tx) + (z + tz) * blockSize] != -1) {
-					Debug.Log("CANT ADD");
 					return false;
                 }
             }
@@ -225,7 +224,7 @@ public class WorldGenerator : MonoBehaviour {
 			for (int i = 0; i < block.tiles.Count; i++) {
 				block.tiles[i].gameObject = 
 					Instantiate(prefabs[block.tiles[i].tileType], 
-					            block.worldPos + block.tiles[i].localPos, Quaternion.identity) as GameObject;
+					            block.worldPos + block.tiles[i].localPos, Quaternion.Euler(-90, -180, 0)) as GameObject;
 			}
 		}
 
