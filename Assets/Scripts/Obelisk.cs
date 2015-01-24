@@ -72,9 +72,9 @@ public class Obelisk : MonoBehaviour {
 	void Update () {
 		if(rotate)
 		{
-			currot += 20;
+			currot += 5;
 			var t = this.transform.Find("obelisk").Find("obeliski");
-			t.Rotate(new Vector3(0,20,0));
+			t.Rotate(new Vector3(0,5,0));
 			if(currot > rotTarget)
 			{
 				transform.Find("obelisk").Find("obeliski").Find("blue").gameObject.SetActive(false);

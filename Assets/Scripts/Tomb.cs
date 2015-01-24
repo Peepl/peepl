@@ -23,7 +23,6 @@ public class Tomb : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		Debug.Log("temple trigger");
 		if (!Active) return;
 		
 		if ( collider.gameObject.tag.Equals("Person"))

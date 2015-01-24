@@ -50,7 +50,7 @@ public class DesertShader : ImageEffectBase {
 		{
 			perlin = new PerlinNoise(512,512,6	);
 			perlin.update(0,0);
-			material.SetVector("_Center", new Vector2(0.5f, 0.5f));
 		}
-	}
+		material.SetVector("_Center", new Vector2(0.5f, 0.5f));
+    }
 }
