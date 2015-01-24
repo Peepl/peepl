@@ -162,7 +162,4807 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.002Action
+      takeName: hahmo.012|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.003Action
+      takeName: hahmo.012|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.004Action
+      takeName: hahmo.012|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.005Action
+      takeName: hahmo.012|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.006Action
+      takeName: hahmo.012|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.008Action
+      takeName: hahmo.012|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.009Action
+      takeName: hahmo.012|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.010Action
+      takeName: hahmo.012|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.011Action
+      takeName: hahmo.012|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.012|hahmo.012Action
+      takeName: hahmo.012|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.002Action
+      takeName: hahmo.011|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.003Action
+      takeName: hahmo.011|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.004Action
+      takeName: hahmo.011|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.005Action
+      takeName: hahmo.011|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.006Action
+      takeName: hahmo.011|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.008Action
+      takeName: hahmo.011|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.009Action
+      takeName: hahmo.011|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.010Action
+      takeName: hahmo.011|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.011Action
+      takeName: hahmo.011|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.011|hahmo.012Action
+      takeName: hahmo.011|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.002Action
+      takeName: hahmo.010|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.003Action
+      takeName: hahmo.010|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.004Action
+      takeName: hahmo.010|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.005Action
+      takeName: hahmo.010|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.006Action
+      takeName: hahmo.010|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.008Action
+      takeName: hahmo.010|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.009Action
+      takeName: hahmo.010|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.010Action
+      takeName: hahmo.010|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.011Action
+      takeName: hahmo.010|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.010|hahmo.012Action
+      takeName: hahmo.010|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.002Action
+      takeName: hahmo.009|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.003Action
+      takeName: hahmo.009|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.004Action
+      takeName: hahmo.009|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.005Action
+      takeName: hahmo.009|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.006Action
+      takeName: hahmo.009|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.008Action
+      takeName: hahmo.009|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.009Action
+      takeName: hahmo.009|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.010Action
+      takeName: hahmo.009|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.011Action
+      takeName: hahmo.009|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.009|hahmo.012Action
+      takeName: hahmo.009|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.002Action
+      takeName: hahmo.008|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.003Action
+      takeName: hahmo.008|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.004Action
+      takeName: hahmo.008|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.005Action
+      takeName: hahmo.008|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.006Action
+      takeName: hahmo.008|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.008Action
+      takeName: hahmo.008|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.009Action
+      takeName: hahmo.008|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.010Action
+      takeName: hahmo.008|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.011Action
+      takeName: hahmo.008|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.008|hahmo.012Action
+      takeName: hahmo.008|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.002Action
+      takeName: hahmo.006|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.003Action
+      takeName: hahmo.006|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.004Action
+      takeName: hahmo.006|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.005Action
+      takeName: hahmo.006|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.006Action
+      takeName: hahmo.006|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.008Action
+      takeName: hahmo.006|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.009Action
+      takeName: hahmo.006|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.010Action
+      takeName: hahmo.006|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.011Action
+      takeName: hahmo.006|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.006|hahmo.012Action
+      takeName: hahmo.006|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.002Action
+      takeName: hahmo.004|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.003Action
+      takeName: hahmo.004|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.004Action
+      takeName: hahmo.004|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.005Action
+      takeName: hahmo.004|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.006Action
+      takeName: hahmo.004|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.008Action
+      takeName: hahmo.004|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.009Action
+      takeName: hahmo.004|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.010Action
+      takeName: hahmo.004|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.011Action
+      takeName: hahmo.004|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.004|hahmo.012Action
+      takeName: hahmo.004|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.002Action
+      takeName: hahmo.003|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.003Action
+      takeName: hahmo.003|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.004Action
+      takeName: hahmo.003|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.005Action
+      takeName: hahmo.003|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.006Action
+      takeName: hahmo.003|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.008Action
+      takeName: hahmo.003|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.009Action
+      takeName: hahmo.003|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.010Action
+      takeName: hahmo.003|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.011Action
+      takeName: hahmo.003|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.003|hahmo.012Action
+      takeName: hahmo.003|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.002Action
+      takeName: hahmo.002|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.003Action
+      takeName: hahmo.002|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.004Action
+      takeName: hahmo.002|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.005Action
+      takeName: hahmo.002|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.006Action
+      takeName: hahmo.002|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.008Action
+      takeName: hahmo.002|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.009Action
+      takeName: hahmo.002|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.010Action
+      takeName: hahmo.002|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.011Action
+      takeName: hahmo.002|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.002|hahmo.012Action
+      takeName: hahmo.002|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.002Action
+      takeName: hahmo.005|hahmo.002Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.003Action
+      takeName: hahmo.005|hahmo.003Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.004Action
+      takeName: hahmo.005|hahmo.004Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.005Action
+      takeName: hahmo.005|hahmo.005Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.006Action
+      takeName: hahmo.005|hahmo.006Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.008Action
+      takeName: hahmo.005|hahmo.008Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.009Action
+      takeName: hahmo.005|hahmo.009Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.010Action
+      takeName: hahmo.005|hahmo.010Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.011Action
+      takeName: hahmo.005|hahmo.011Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hahmo.005|hahmo.012Action
+      takeName: hahmo.005|hahmo.012Action
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hahmo.002
+        weight: 1
+      - path: hahmo.003
+        weight: 1
+      - path: hahmo.004
+        weight: 1
+      - path: hahmo.005
+        weight: 1
+      - path: hahmo.006
+        weight: 1
+      - path: hahmo.008
+        weight: 1
+      - path: hahmo.009
+        weight: 1
+      - path: hahmo.010
+        weight: 1
+      - path: hahmo.011
+        weight: 1
+      - path: hahmo.012
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
