@@ -12,7 +12,7 @@ public class Starter : MonoBehaviour {
 	private GameObject World;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         TheLeader = Instantiate(LeaderPrefab, new Vector3(10.0f, 5.0f, 0.0f), Quaternion.identity) as GameObject;
         Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
         Swarm.name = "Swarm";
