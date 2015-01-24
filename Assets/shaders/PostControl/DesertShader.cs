@@ -10,6 +10,7 @@ public class DesertShader : ImageEffectBase {
 	public float speedX;
 	public float speedY;
 	public float fogStrength;
+	public float day;
 
 	private PerlinNoise perlin;
 
@@ -18,7 +19,8 @@ public class DesertShader : ImageEffectBase {
 		perlin.update(speedX,speedY);
 		material.SetFloat("_PerlinStrength", perlinStrength);
 		material.SetFloat("_FogStrength", fogStrength);
-//		material.SetFloat("_SpeedY", speedY);
+		material.SetFloat("_Day", day);
+		//		material.SetFloat("_SpeedY", speedY);
 		material.SetColor("_Color", desertColor);
 		material.SetTexture("_Perlin", perlin.noiseTex);
 		material.SetTexture("_Noise", noise);

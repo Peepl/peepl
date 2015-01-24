@@ -6,6 +6,7 @@ public class CameraAI : MonoBehaviour {
     public GameObject leader;
     public float Distance = 10.0f;
 
+	private float dayNightCycle = 0f;
 
     // Use this for initialization
 	void Start () {
@@ -22,11 +23,12 @@ public class CameraAI : MonoBehaviour {
 
         float stormSeverity = GameObject.Find("GameManager").GetComponent<SandStorm>().Severity;
         DesertShader storm = GetComponent<DesertShader>();
-        storm.perlinStrength = 0.5f * stormSeverity+0.3f;
-        storm.speedX = 0.2f * stormSeverity+0.02f;
-        storm.speedY = 0.2f * stormSeverity+0.02f;
-		storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0) ;
+        storm.perlinStrength = 0.5f * stormSeverity+1.8f;
+        storm.speedX = 0.2f * stormSeverity+0.1f;
+        storm.speedY = 0.2f * stormSeverity+0.1f;
+		storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0);
         storm.fogStrength = Mathf.Min (1.0f,stormSeverity+0.4f);
-	
+		storm.day = Mathf.Abs (Mathf.Sin(dayNightCycle));
+		dayNightCycle+=0.005f;
 	}
 }
