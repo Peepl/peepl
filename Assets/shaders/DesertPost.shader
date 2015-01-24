@@ -48,7 +48,7 @@ half4 frag (v2f i) : COLOR{
 	float4 n = tex2D(_Noise, i.uv*2.0);
 	float4 p = tex2D(_Perlin, i.uv);
 	p.r = p.r * n.x*_PerlinStrength;
-	depthValue =clamp(depthValue+depthValue*p.r, 0.0, 1.0);
+	//depthValue =clamp(depthValue+depthValue*p.r, 0.0, 1.0);
    	depth.r = depthValue;
   	depth.g = depthValue;
    	depth.b = depthValue;
@@ -63,18 +63,22 @@ half4 frag (v2f i) : COLOR{
 	
 //	_FogStrength = clamp(0,1,_FogStrength-(1-dist/3.0));
 	
-	//_FogStrength = dist>0.1? smoothstep(0.0,_FogStrength, (dist-0.1)*2)+_FogStrength/6.0:_FogStrength/6.0;
+//	_FogStrength = dist>0.1? smoothstep(0.0,_FogStrength, (dist-0.1)*2)+_FogStrength/6.0:_FogStrength/6.0;
 	//_FogStrength = 0;
 	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.12)*(4.25+p.r*2));
 	float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
-	smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
+	//smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
+	_FogStrength *= 1-smooth*0.1;
+	_FogStrength+=p.r;
 	float darken = dist>0.12? smooth :1.0;
-	darken +=0.6;
+	darken +=0.05;
 	darken = clamp(0, 1, darken);
+	
+	c*= darken;
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
 	c.g =lerp(c.g,c.g*max(0.01,(1-depthValue)) + depthValue*_Color.g , _FogStrength); 
 	c.b =lerp(c.b,c.b*max(0.01,(1-depthValue)) + depthValue*_Color.b , _FogStrength);
-	c*= darken;
+	c*= clamp(darken,0.6,1);
 //	c+=float4(border,border,border,border);
     depth.a = 1;
     return c;
