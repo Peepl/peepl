@@ -23,7 +23,7 @@ public class WorldGenerator : MonoBehaviour {
 
 	public int seed = 1234;
 
-	private float specialDistribution = 0.2f;
+	private float specialDistribution = 0.4f;
 	
 	private float killDistance = 800.0f;
 
@@ -240,11 +240,12 @@ public class WorldGenerator : MonoBehaviour {
 			block.enabled = true;
 
 			for (int i = 0; i < block.tiles.Count; i++) {
+
 				Quaternion rot = Quaternion.identity;
 
-				if (block.tiles[i].tileType > 0) {
+				/*if (block.tiles[i].tileType > 0) {
 					rot = Quaternion.Euler(-90, -180, 0);
-				}
+				}*/
 
 				block.tiles[i].gameObject = 
 					Instantiate(prefabs[block.tiles[i].tileType], 
