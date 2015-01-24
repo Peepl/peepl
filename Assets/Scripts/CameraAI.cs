@@ -9,7 +9,7 @@ public class CameraAI : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         camera.depthTextureMode = DepthTextureMode.Depth;
-        camera.nearClipPlane = 30.0f;
+        camera.nearClipPlane = 15.0f;
         camera.farClipPlane = 120.0f;
         transform.position = new Vector3(0.0f, Distance, Distance);
     }

@@ -90,10 +90,10 @@ public class SwarmAI : MonoBehaviour {
                 Vector3 v = p2 - p1;
                 float mag = v.magnitude;
                 float multiplier;
-                if (mag < 8.0f)
+                if (mag < 24.0f)
                 {
                     mag = Mathf.Max(1.0f, mag);
-                    multiplier = 0.1f / (mag * mag);
+                    multiplier = 0.8f / (mag * mag);
                 }
                 else
                 {
