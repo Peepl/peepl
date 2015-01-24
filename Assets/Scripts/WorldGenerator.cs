@@ -114,26 +114,6 @@ public class WorldGenerator : MonoBehaviour {
 			tiles[i] = -1;
 		}
 
-<<<<<<< HEAD
-		if (prefabs == null || prefabs.Count == 0) {
-			Debug.LogError("No prefabs");
-		}
-        
-		if (mapData == null) {
-			GenerateMapData();
-		}
-        /*
-		if (Application.isEditor) {
-
-			var children = new List<GameObject>();
-			foreach (Transform child in transform) children.Add(child.gameObject);
-			children.ForEach(child => DestroyImmediate(child.gameObject));
-		
-			currentTiles.Clear();
-		}*/
-        
-		frameIndex = frameIndex + 1;
-=======
 		Block block = new Block();
 		block.tiles = new List<Tile>();
 		block.enabled = false;
@@ -141,7 +121,6 @@ public class WorldGenerator : MonoBehaviour {
 		blocks.Add(block);
 
 		float blockWorldSize = blockSize * tileSize;
->>>>>>> anssi-branch
 
 		block.worldPos = new Vector3(-(float)maxSize * tileSize / 2.0f + (float)blockX * blockWorldSize,
 		                             0.0f,
@@ -215,18 +194,6 @@ public class WorldGenerator : MonoBehaviour {
 	
 		for (int i = 0; i < blocks.Count; i++) {
 		
-<<<<<<< HEAD
-			if (currentTiles[i].frameIndex != frameIndex) {
-                /*
-				if (Application.isEditor) {
-					DestroyImmediate(currentTiles[i].gameObject);
-				} else {*/
-					Destroy(currentTiles[i].gameObject);
-				/*}*/
-			} 
-=======
-			//Debug.Log ("pos " + blocks[i].worldPos.ToString());
-
 			if (Vector3.Distance(blocks[i].worldPos, leaderTransform.position) < appearDistance) {
 				EnableBlock(blocks[i]);
 			}
@@ -239,7 +206,6 @@ public class WorldGenerator : MonoBehaviour {
 				DisableBlock(blocks[i]);			
 			}
 		
->>>>>>> anssi-branch
 		}
 	
 	}
