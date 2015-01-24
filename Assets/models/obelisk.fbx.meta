@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: 2e646a805d9994c04926424d43ef9ca9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: obelisk
+    400000: //RootNode
+    400002: obelisk
+    2300000: //RootNode
+    2300002: obelisk
+    3300000: //RootNode
+    3300002: obelisk
+    4300000: obeliskmaa
+    4300002: obelisk
+    7400000: obeliskmaa|hahmo.002Action
+    7400002: obeliskmaa|hahmo.003Action
+    7400004: obeliskmaa|hahmo.004Action
+    7400006: obeliskmaa|hahmo.005Action
+    7400008: obeliskmaa|hahmo.006Action
+    7400010: obeliskmaa|hahmo.008Action
+    7400012: obeliskmaa|hahmo.009Action
+    7400014: obeliskmaa|hahmo.010Action
+    7400016: obeliskmaa|hahmo.011Action
+    7400018: obeliskmaa|hahmo.012Action
+    7400020: obeliskmaa|obeliskAction
+    7400022: obelisk|hahmo.002Action
+    7400024: obelisk|hahmo.003Action
+    7400026: obelisk|hahmo.004Action
+    7400028: obelisk|hahmo.005Action
+    7400030: obelisk|hahmo.006Action
+    7400032: obelisk|hahmo.008Action
+    7400034: obelisk|hahmo.009Action
+    7400036: obelisk|hahmo.010Action
+    7400038: obelisk|hahmo.011Action
+    7400040: obelisk|hahmo.012Action
+    7400042: obelisk|obeliskAction
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 25
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
