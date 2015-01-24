@@ -19,7 +19,7 @@ sampler2D _MainTex;
 sampler2D _Perlin;
 sampler2D _Noise;
 float4 _Color;
-
+float _Strength;
 
 struct v2f {
    float4 pos : SV_POSITION;
@@ -44,12 +44,12 @@ half4 frag (v2f i) : COLOR{
    half4 depth;
 	float4 n = tex2D(_Noise, i.uv*2.0);
 	float4 p = tex2D(_Perlin, i.uv);
-	p.r = p.r * n.x*1.0;
+	p.r = p.r * n.x*_Strength;
 	depthValue =clamp(depthValue+depthValue*p.r, 0.0, 1.0);
-   depth.r = depthValue;
-   depth.g = depthValue;
-   depth.b = depthValue;
-   
+   	depth.r = depthValue;
+  	depth.g = depthValue;
+   	depth.b = depthValue;
+   	
    	float4 c = tex2D(_MainTex, i.uv);
 	
 	
