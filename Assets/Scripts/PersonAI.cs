@@ -48,7 +48,7 @@ public class PersonAI : MonoBehaviour {
         Vector3 v = Leader.transform.position - transform.position;
         float mag = 0.0f;
         float xzDistSquared = v.x * v.x + v.z * v.z;
-        if (xzDistSquared < 10.0f)
+        if (xzDistSquared < 40.0f)
         {
             mag = -100.0f / Mathf.Max(1.0f, xzDistSquared);
         } else if (xzDistSquared < 1000000.0f)
@@ -66,5 +66,8 @@ public class PersonAI : MonoBehaviour {
             rigidbody.velocity = MaxVelo * rigidbody.velocity.normalized;
         }
         transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
+        transform.rotation = Quaternion.identity;
+        float angle = Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x);
+        transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f), angle);
 	}
 }
