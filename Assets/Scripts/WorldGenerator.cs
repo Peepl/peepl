@@ -14,9 +14,7 @@ public class WorldGenerator : MonoBehaviour {
 	public int generationRange;
 
 	public float tileSize;
-
-	public Transform playerTransform;
-
+	
 	public List<GameObject> prefabs;
 
 	public int seed = 1234;
@@ -29,7 +27,13 @@ public class WorldGenerator : MonoBehaviour {
 	private int maxSize = 1024;
 
 	private int[] mapData;
-		    
+
+	private Transform leaderTransform;
+	
+	public void Init(GameObject leaderGameObject) {
+		leaderTransform = leaderGameObject.transform;			
+	}
+
 	// Use this for initialization
 	void Start () {
 
@@ -78,8 +82,8 @@ public class WorldGenerator : MonoBehaviour {
 
 	void GenerateTiles() {
 
-		if (playerTransform == null) {
-			Debug.LogError("No playerTransform set");
+		if (leaderTransform == null) {
+			Debug.LogError("No leaderTransform set");
 			return;
 		}
 
@@ -104,8 +108,8 @@ public class WorldGenerator : MonoBehaviour {
 
 		//Debug.Log ("FrameIndex " + frameIndex);
 		        
-		int px = (int)Mathf.Floor(playerTransform.position.x / tileSize);
-		int pz = (int)Mathf.Floor(playerTransform.position.z / tileSize);
+		int px = (int)Mathf.Floor(leaderTransform.position.x / tileSize);
+		int pz = (int)Mathf.Floor(leaderTransform.position.z / tileSize);
         
         newTiles.Clear();
 

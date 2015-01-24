@@ -18,7 +18,7 @@ public class SwarmAI : MonoBehaviour {
         m_People = new GameObject[200];
         for (int i = 0; i < People; ++i)
         {
-            GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
+            GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset() + new Vector3(0.0f, 2.0f, 0.0f), Quaternion.identity) as GameObject;
             tmp.GetComponent<PersonAI>().Leader = leader;
             m_People[i] = tmp;
         }
