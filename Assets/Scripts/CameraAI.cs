@@ -20,14 +20,15 @@ public class CameraAI : MonoBehaviour {
 	void Update () {
         transform.position = new Vector3(leader.transform.position.x+Distance, leader.transform.position.y + Height, leader.transform.position.z - Distance);
         transform.LookAt(leader.transform.position);
-
         float stormSeverity = GameObject.Find("GameManager").GetComponent<SandStorm>().Severity;
         DesertShader storm = GetComponent<DesertShader>();
-        storm.perlinStrength = 0.5f * stormSeverity+1.8f;
-        storm.speedX = 0.2f * stormSeverity+0.1f;
-        storm.speedY = 0.2f * stormSeverity+0.1f;
+        
+        storm.perlinStrength = 1.0f + 5.0f * stormSeverity * stormSeverity;
+        storm.speedX = 0.2f * stormSeverity+0.2f;
+        storm.speedY = 0.2f * stormSeverity+0.2f;
 		storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0);
-        storm.fogStrength = Mathf.Min (1.0f,stormSeverity+0.4f);
+        storm.fogStrength = 0.4f + 3.0f * stormSeverity * stormSeverity;
+        
 		storm.day = Mathf.Abs (Mathf.Sin(dayNightCycle));
 		dayNightCycle+=0.005f;
 	}

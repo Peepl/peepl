@@ -5,6 +5,7 @@ public class LeaderAI : MonoBehaviour {
 
     public Vector3 target;
     private float cachedAngle = 0.0f;
+    public float MaxSpeed = 8.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -27,9 +28,9 @@ public class LeaderAI : MonoBehaviour {
         }
 
         rigidbody.velocity = target - transform.position;
-        if ( rigidbody.velocity.magnitude > 10.0f)
+        if ( rigidbody.velocity.magnitude > MaxSpeed)
         {
-            rigidbody.velocity = 10.0f * rigidbody.velocity.normalized;
+            rigidbody.velocity = MaxSpeed * rigidbody.velocity.normalized;
         }
 
         transform.rotation = Quaternion.identity;
