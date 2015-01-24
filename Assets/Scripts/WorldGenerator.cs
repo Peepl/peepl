@@ -48,6 +48,12 @@ public class WorldGenerator : MonoBehaviour {
 
 		// cache tileinfos
 		for (int i = 0; i < prefabs.Count; i++) {
+
+			TileInfo info = prefabs[i].GetComponent<TileInfo>();
+			if (info == null) {
+				Debug.LogError("No tile info in prefab");
+			}
+
 			tileInfo.Add(prefabs[i].GetComponent<TileInfo>());
 		}
 
