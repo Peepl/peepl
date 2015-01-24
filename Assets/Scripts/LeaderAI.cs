@@ -38,7 +38,6 @@ public class LeaderAI : MonoBehaviour {
         {
             cachedAngle = Mathf.Atan2(rigidbody.velocity.x, rigidbody.velocity.z);
         }
-        Debug.Log(cachedAngle);
         transform.localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
 	}
 }
