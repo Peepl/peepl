@@ -23,6 +23,8 @@ public class SandStorm : MonoBehaviour {
 	private bool ending = false;
 	private bool victory;
 
+	private bool forceChange = false;
+
 	// Use this for initialization
 	void Start () {
 		ending = false;
@@ -45,14 +47,16 @@ public class SandStorm : MonoBehaviour {
 
 	public void ForceDay()
 	{
+		forceChange = true;
 		day = true;
-		dayVal = 1;
+	//	dayVal = 1;
 		dayStart = System.DateTime.Now.Ticks;
 	}
 	public void ForceNight()
 	{
-		day = false;
-		dayVal = 0;
+		forceChange = true;
+        day = false;
+	//	dayVal = 0;
 		dayStart = System.DateTime.Now.Ticks;
 	}
 	
@@ -65,6 +69,7 @@ public class SandStorm : MonoBehaviour {
 			Severity = Mathf.Max( Mathf.Min(Severity+0.2f*(victory?-1:1), 5.0f), -10f);
 
 		}
+
 		else
 		{
 
@@ -86,38 +91,65 @@ public class SandStorm : MonoBehaviour {
 	            Severity = 0.0f;
 	        }
 
-			//Day is over
-	        if(System.DateTime.Now.Ticks > dayStart + dayLength && !day)
+			if(forceChange)
 			{
-				dayVal = (float)(System.DateTime.Now.Ticks - (dayStart + dayLength) )/(float)transition;
-			    if(dayVal >= 1.0f)
+				if(day && dayVal < 1)
 				{
-					dayVal = 1.0f;
-					day = true;
-					dayStart = System.DateTime.Now.Ticks;
+					dayVal += 0.04f;
+				}
+				else if(!day && dayVal > 0)
+				{
+					dayVal -= 0.04f;
+				}
+				if(day && dayVal > 1)
+				{
+					dayVal = 1;
+					forceChange = false;
+                    dayStart = System.DateTime.Now.Ticks;
+                }
+                else if(!day && dayVal < 0)
+                {
+                    dayVal = 0;
+                    forceChange = false;
+                    dayStart = System.DateTime.Now.Ticks;
 				}
 			}
-			//Day is over
-			else if(System.DateTime.Now.Ticks > dayStart + nightLength && day)
+			else
 			{
-				dayVal = 1.0f-(float)(System.DateTime.Now.Ticks - (dayStart + dayLength) )/(float)transition;
-				if(dayVal <= 0.0f)
+
+				//Day is over
+		        if(System.DateTime.Now.Ticks > dayStart + dayLength && !day)
 				{
-					dayVal = 0.0f;
-					day = false;
-	                dayStart = System.DateTime.Now.Ticks;
-	            }
-	        }
-			if(dayVal > 1f)
-				dayVal = 1f;
-			else if(dayVal <0f)
-				dayVal = 0f;
+					dayVal = (float)(System.DateTime.Now.Ticks - (dayStart + dayLength) )/(float)transition;
+				    if(dayVal >= 1.0f)
+					{
+						dayVal = 1.0f;
+						day = true;
+						dayStart = System.DateTime.Now.Ticks;
+					}
+				}
+				//Day is over
+				else if(System.DateTime.Now.Ticks > dayStart + nightLength && day)
+				{
+					dayVal = 1.0f-(float)(System.DateTime.Now.Ticks - (dayStart + dayLength) )/(float)transition;
+					if(dayVal <= 0.0f)
+					{
+						dayVal = 0.0f;
+						day = false;
+		                dayStart = System.DateTime.Now.Ticks;
+		            }
+		        }
+				if(dayVal > 1f)
+					dayVal = 1f;
+				else if(dayVal <0f)
+					dayVal = 0f;
+				//Debug.Log ("angle " + angle+ " --- " + ( ( (float)System.DateTime.Now.Ticks))/((float) (dayLength+transition+nightLength+transition)));
+		        
+			}
 			long tickd = System.DateTime.Now.Ticks % (dayLength+transition+nightLength+transition)*4;
-	            float angle = Mathf.Cos( (float)(( ( (double)tickd))/((double) (dayLength+transition+nightLength+transition)*4)*Mathf.PI*2));
-			float angle2 = Mathf.Sin( (float)(( ( (double)tickd))/((double) (dayLength+transition+nightLength+transition)*4)*Mathf.PI*2));
-			//Debug.Log ("angle " + angle+ " --- " + ( ( (float)System.DateTime.Now.Ticks))/((float) (dayLength+transition+nightLength+transition)));
-	        
-			GameObject.Find("mainlight").GetComponent<Light>().intensity = dayVal*0.3f+0.2f;
+			float angle = Mathf.Cos( (float)(( ( (double)tickd))/((double) (dayLength+transition+nightLength+transition)*4)*Mathf.PI*2));
+            float angle2 = Mathf.Sin( (float)(( ( (double)tickd))/((double) (dayLength+transition+nightLength+transition)*4)*Mathf.PI*2));
+            GameObject.Find("mainlight").GetComponent<Light>().intensity = dayVal*0.3f+0.2f;
 			GameObject.Find("mainlight").GetComponent<Light>().shadowStrength = dayVal*0.8f+0.2f;
 	        GameObject.Find("mainlight").transform.rotation = Quaternion.Euler(new Vector3(46f+angle*15f, 212f+angle*20f, 46f+(angle2)*15f));
 		}

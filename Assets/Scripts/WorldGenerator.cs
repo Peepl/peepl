@@ -102,6 +102,7 @@ public class WorldGenerator : MonoBehaviour {
 	}
 
 	int GetRandomTileType() {
+		return 9;
 		int tileType = 0;
 		var rnd = Random.value;
 		if (rnd < specialDistribution || rnd < basicDistribution) {
