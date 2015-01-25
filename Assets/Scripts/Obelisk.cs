@@ -55,7 +55,7 @@ public class Obelisk : MonoBehaviour {
 				goodAs.Play();
                 Debug.Log("Friendly obelisk triggered");
 
-				guiController.EventTriggered("Holy Obelisk found. Bless you.");
+				guiController.EventTriggered("The obelisk empowers you.");
             }
             else 
             {
@@ -73,7 +73,7 @@ public class Obelisk : MonoBehaviour {
 				badAs.Play();
                 Debug.Log("Unfriendly obelisk triggered");
 
-				guiController.EventTriggered("It's Dark Obelisk. God damn...");
+				guiController.EventTriggered("The obelisk humms ominously.");
                 
 			}
         }
