@@ -24,7 +24,8 @@ public class WorldGenerator : MonoBehaviour {
 	public int seed = 1234;
 
 	private float specialDistribution = 0.4f;
-	
+	private float basicDistribution = 0.6f;
+
 	private float killDistance = 800.0f;
 
 	private float appearDistance = 500.0f;
@@ -93,11 +94,13 @@ public class WorldGenerator : MonoBehaviour {
 	int GetRandomTileType() {
 
 		int tileType = 0;
+		var rnd = Random.value;
+		if (rnd < specialDistribution || rnd < basicDistribution) {
 
-		if (Random.value < specialDistribution) {
-
-			tileType = Random.Range(1, tileInfo.Count);
-
+			if(rnd < specialDistribution)
+				tileType = Random.Range(1, 5);
+			else
+				tileType = Random.Range(5, tileInfo.Count);
 			int count;
 
 			if (tileTypesInScene.TryGetValue(tileType, out count)) {
