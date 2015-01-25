@@ -4,8 +4,8 @@ using System.Collections;
 public class CameraAI : MonoBehaviour {
 
     public GameObject leader;
-    public float Distance = 10.0f;
-	public float Height = 15.0f;
+    public float Distance = 14.0f;
+	public float Height = 21.0f;
 
 
     // Use this for initialization
