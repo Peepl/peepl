@@ -25,8 +25,8 @@ public class Cavern : MonoBehaviour {
 
 		goodAs = this.gameObject.AddComponent<AudioSource>();
 		goodAs.clip = goodClip;
-		rotate = true;
-		sphere = this.transform.Find("good");
+	//	rotate = true;
+	//	sphere = this.transform.Find("good");
 	}
 
     void OnTriggerEnter(Collider collider)
@@ -62,9 +62,9 @@ public class Cavern : MonoBehaviour {
    
     // Update is called once per frame
 	void Update () {
-		if(rotate)
+		//if(rotate)
 		{
-			this.sphere.Rotate(new Vector3(0, 0.3f, 0f));
+		//	this.sphere.Rotate(new Vector3(0, 0.3f, 0f));
 		}
 	}
 }
