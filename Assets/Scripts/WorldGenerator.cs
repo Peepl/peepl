@@ -43,26 +43,19 @@ public class WorldGenerator : MonoBehaviour {
 	private Dictionary<int, int> tileTypesInScene = new Dictionary<int, int>();
 
 	private bool villageSpawned;
+
+	private Vector3 villagePosition;
 	
-	public void Init(GameObject leaderGameObject) {
+	public void SetLeader(GameObject leaderGameObject) {
 		leaderTransform = leaderGameObject.transform;			
+	}
+
+	public Vector3 GetVillagePosition() {
+		return villagePosition;
 	}
 
 	// Use this for initialization
 	void Start () {
-		villageSpawned = false;
-		// cache tileinfos
-		for (int i = 0; i < prefabs.Count; i++) {
-
-			TileInfo info = prefabs[i].GetComponent<TileInfo>();
-			if (info == null) {
-				Debug.LogError("No tile info in prefab");
-			}
-
-			tileInfo.Add(prefabs[i].GetComponent<TileInfo>());
-		}
-
-		CreateBlocks();
 	}
 	
 	// Update is called once per frame
@@ -77,7 +70,24 @@ public class WorldGenerator : MonoBehaviour {
 	}
 
 	public void Test() {
+	}
 
+	public void Generate() {
+
+		villageSpawned = false;
+		villagePosition = new Vector3(0.0f, 0.0f, 0.0f);
+		// cache tileinfos
+		for (int i = 0; i < prefabs.Count; i++) {
+			
+			TileInfo info = prefabs[i].GetComponent<TileInfo>();
+			if (info == null) {
+				Debug.LogError("No tile info in prefab");
+			}
+			
+			tileInfo.Add(prefabs[i].GetComponent<TileInfo>());
+		}
+		
+		CreateBlocks();
 	}
 	
 	void CreateBlocks() {
@@ -96,12 +106,15 @@ public class WorldGenerator : MonoBehaviour {
 		var rnd = Random.value;
 		if (rnd < specialDistribution || rnd < basicDistribution) {
 
-			if(rnd < specialDistribution)
-				tileType = Random.Range(1, 5);
-			else
-				tileType = Random.Range(5, tileInfo.Count);
-			int count;
+			do {
+				if(rnd < specialDistribution)
+					tileType = Random.Range(1, 5);
+				else
+					tileType = Random.Range(5, tileInfo.Count);
+			} while (tileType == 11);
 
+			int count = 0;
+							
 			if (tileTypesInScene.TryGetValue(tileType, out count)) {
 
 				/*if (count >= tileInfo[tileType].maxCount) {
@@ -186,7 +199,7 @@ public class WorldGenerator : MonoBehaviour {
 		for (int z = 0; z < blockSize; z++) {
 			for (int x = 0; x < blockSize; x++) {
 
-				int tileType = 0; 
+				int tileType = 0;
 
 				if (!IsCenterTile(blockX, blockZ, x, z, 1)) {
 					tileType = GetRandomTileType();
@@ -247,6 +260,13 @@ public class WorldGenerator : MonoBehaviour {
 						for (int tx = 0; tx < info.size; tx++) {
 							tiles[(x + tx) + (z + tz) * blockSize] = 0;
 						}
+					}
+
+					if (tileType == 11) {
+
+						Debug.Log ("Village created");
+
+						villagePosition = block.worldPos + tile.localPos;
 					}
 
 					tile.tileType = tileType;
