@@ -37,7 +37,8 @@ public class Tomb : MonoBehaviour {
 	{
 		if (!Active) return;
 		
-		if ( collider.gameObject.tag.Equals("Person"))
+		if ( collider.gameObject.tag.Equals("Person") &&
+            collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
 		{
 			Active = false;
 			if ( Friendly )
