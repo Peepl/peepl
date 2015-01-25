@@ -13,6 +13,7 @@ public class Starter : MonoBehaviour {
 	void Start () {
         TheLeader = Instantiate(LeaderPrefab, new Vector3(10.0f, 5.0f, 0.0f), Quaternion.identity) as GameObject;
         Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
+        Swarm.name = "Swarm";
         Swarm.GetComponent<SwarmAI>().InitSwarm(TheLeader);
         GameObject.Find("Main Camera").GetComponent<CameraAI>().leader = TheLeader;
 	}
