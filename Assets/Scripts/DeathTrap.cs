@@ -37,7 +37,7 @@ public class DeathTrap : MonoBehaviour {
         m_Active = false;
         renderer.material.color = Color.yellow;
         m_DeactivationTime = System.DateTime.Now.Ticks;
-        GameObject.Find("Swarm").GetComponent<SwarmAI>().KillInRadius(transform.position, Radius, 0.5f);
+        GameObject.Find("Swarm").GetComponent<SwarmAI>().KillInRadius(transform.position, 25.0f, 0.5f);
         m_Count = 0;
 
     }
