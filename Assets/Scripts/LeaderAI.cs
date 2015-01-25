@@ -9,9 +9,11 @@ public class LeaderAI : MonoBehaviour {
 
 	private bool fireDown = false;
 
+	private Transform sphere;
+
 	// Use this for initialization
 	void Start () {
-
+		this.sphere = this.transform.Find ("Sphere");
 	}
 	
 	// Update is called once per frame
@@ -34,13 +36,18 @@ public class LeaderAI : MonoBehaviour {
                 //target.y = 0.0f;
             }
         }
-
+		this.sphere.Rotate(new Vector3(0f,7f,0f));
         rigidbody.velocity = target - transform.position;
         if ( rigidbody.velocity.magnitude > MaxSpeed)
         {
             rigidbody.velocity = MaxSpeed * rigidbody.velocity.normalized;
         }
-
+		var moralspeed = GameObject.Find("Swarm").GetComponent<SwarmAI>().m_MoraleLossSpeed;
+		this.sphere.localScale = new Vector3(
+			(2f-(moralspeed/0.004f))*0.3f,
+			(2f-(moralspeed/0.004f))*0.3f,
+			(2f-(moralspeed/0.004f))*0.3f
+			);
         transform.rotation = Quaternion.identity;
 
         if (rigidbody.velocity.magnitude > 1.0f)

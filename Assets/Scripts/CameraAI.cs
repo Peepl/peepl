@@ -11,8 +11,8 @@ public class CameraAI : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         camera.depthTextureMode = DepthTextureMode.Depth;
-        camera.nearClipPlane = 15.0f;
-        camera.farClipPlane = 140.0f;
+        camera.nearClipPlane = 10.0f;
+        camera.farClipPlane = 160.0f;
 	}
 	
 	// Update is called once per frame
