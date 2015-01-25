@@ -23,8 +23,7 @@ public class Obelisk : MonoBehaviour {
         Color = GameColor.Blue;
         GameObject swarm = GameObject.Find("Swarm");
         bool colorFriendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
-		float goodChance = Random.value > 0.5f;
-        Friendly = goodChance//Random.Range(0.0f, 1.0f) < goodChance;
+		Friendly = Random.value > 0.5f;
         Active = true;
 
 		guiController = GameObject.FindObjectOfType<GUIController>();
