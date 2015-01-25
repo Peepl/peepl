@@ -4,8 +4,15 @@ using System.Collections;
 public class Cavern : MonoBehaviour {
 
     GameColor Color;
+	public AudioClip goodClip;
 
     private bool Friendly;
+	private AudioSource goodAs;
+
+	private bool Active;
+	private bool rotate;
+
+	private Transform sphere;
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +20,13 @@ public class Cavern : MonoBehaviour {
         GameObject swarm = GameObject.FindGameObjectWithTag("Swarm");
         bool colorFriendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
         float goodChance = colorFriendly ? 0.75f : 0.25f;
-        Friendly = Random.Range(0.0f, 1.0f) < goodChance;
+		Friendly = true;// Random.Range(0.0f, 1.0f) < goodChance;
         Debug.Log("cavern is " + Friendly);
+
+		goodAs = this.gameObject.AddComponent<AudioSource>();
+		goodAs.clip = goodClip;
+		rotate = true;
+		sphere = this.transform.Find("good");
 	}
 
     void OnTriggerEnter(Collider collider)
@@ -24,7 +36,9 @@ public class Cavern : MonoBehaviour {
 
             if ( Friendly )
             {
-                collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+			  collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+				goodAs.Play();
+				rotate = true;
             }
             else 
             {
@@ -48,6 +62,9 @@ public class Cavern : MonoBehaviour {
    
     // Update is called once per frame
 	void Update () {
-
+		if(rotate)
+		{
+			this.sphere.Rotate(new Vector3(0, 0.3f, 0f));
+		}
 	}
 }
