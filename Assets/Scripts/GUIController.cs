@@ -27,6 +27,8 @@ public class GUIController : MonoBehaviour {
 		InfoPanelStartTime = 0;
 
 		InfoPanel.SetActive(false);
+
+		EventTriggered("Your village has been destroyed!");
 		}
 	
     public void MoraleChanged()
