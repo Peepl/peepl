@@ -26,7 +26,7 @@ public class Tomb : MonoBehaviour {
 		Debug.Log("temple trigger");
 		if (!Active) return;
 		
-		if (collider.gameObject.tag.Equals("Person"))
+		if ( collider.gameObject.tag.Equals("Person"))
 		{
 			Active = false;
 			if ( Friendly )
