@@ -13,13 +13,18 @@ public class Starter : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        TheLeader = Instantiate(LeaderPrefab, new Vector3(1.4f, 5.0f, 1.4f), Quaternion.identity) as GameObject;
-        Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
+		World = Instantiate(WorldPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
+		WorldGenerator gen = World.GetComponent<WorldGenerator>();
+		gen.Generate();
+
+		Debug.Log ("Get Village pos");
+
+		TheLeader = Instantiate(LeaderPrefab, new Vector3(50.0f, 5.0f, -20.0f) + gen.GetVillagePosition(), Quaternion.identity) as GameObject;
+        Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f) + gen.GetVillagePosition(), Quaternion.identity) as GameObject;
         Swarm.name = "Swarm";
         Swarm.GetComponent<SwarmAI>().InitSwarm(TheLeader);
-        GameObject.Find("Main Camera").GetComponent<CameraAI>().leader = TheLeader;
-		World = Instantiate(WorldPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
-		World.GetComponent<WorldGenerator>().Init(TheLeader);
+		World.GetComponent<WorldGenerator>().SetLeader(TheLeader);
+		GameObject.Find("Main Camera").GetComponent<CameraAI>().leader = TheLeader;
 	}
 	
 	// Update is called once per frame
