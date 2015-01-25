@@ -31,9 +31,9 @@ public class Cavern : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag.Equals("Person"))
+        if (collider.gameObject.tag.Equals("Person") &&
+            collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
         {
-
             if ( Friendly )
             {
 			  collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;

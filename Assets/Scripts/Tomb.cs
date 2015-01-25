@@ -37,7 +37,8 @@ public class Tomb : MonoBehaviour {
 	{
 		if (!Active) return;
 		
-		if ( collider.gameObject.tag.Equals("Person"))
+		if ( collider.gameObject.tag.Equals("Person") &&
+            collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
 		{
 			Active = false;
 			if ( Friendly )
@@ -57,7 +58,7 @@ public class Tomb : MonoBehaviour {
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
 
-				guiController.EventTriggered("Holy tomb bring joy to the tribe.");
+				guiController.EventTriggered("The Holy tomb brings joy for the tribe .");
 			}
 			else 
 			{
