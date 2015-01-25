@@ -7,6 +7,7 @@ public class PersonAI : MonoBehaviour {
 
     private Vector3 offset;
     private GameObject m_Swarm;
+    private float cachedAngle;
 
     public static float Radius = 15.0f;
     public static float MaxVelo = 5.0f;
@@ -65,9 +66,12 @@ public class PersonAI : MonoBehaviour {
         {
             rigidbody.velocity = MaxVelo * rigidbody.velocity.normalized;
         }
-        //transform.position = new Vector3(transform.position.x, 1.1f, transform.position.z);
-        transform.rotation = Quaternion.identity;
-        float angle = Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x);
-        transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f), angle);
-	}
+
+        if (rigidbody.velocity.magnitude > 1.0f)
+        {
+            cachedAngle = Mathf.Atan2(rigidbody.velocity.x, rigidbody.velocity.z);
+        }
+
+        transform.localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
+    }
 }
