@@ -12,11 +12,11 @@ public class SandStorm : MonoBehaviour {
     public long Length = 230000000; // 60 s
     private long Starttime;
 
-	public long dayLength = 150000000;
-	public long nightLength = 100000000;
+	public long dayLength = 250000000;
+	public long nightLength = 200000000;
 	private bool day = true;
 	private long dayStart;
-	private long transition = 100000000;
+	private long transition = 150000000;
     
 	private long last =0;
 
@@ -62,7 +62,7 @@ public class SandStorm : MonoBehaviour {
 		if(ending)
 		{
 			stormAS.Play();
-			Severity = Mathf.Max( Mathf.Min(Severity+0.05f*(victory?-1:1), 5.0f), 0);
+			Severity = Mathf.Max( Mathf.Min(Severity+0.05f*(victory?-1:1), 5.0f), -10f);
 
 		}
 		else

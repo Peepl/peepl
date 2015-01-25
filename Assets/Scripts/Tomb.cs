@@ -55,6 +55,7 @@ public class Tomb : MonoBehaviour {
 			}
 			else 
 			{
+				transform.Find("bad").gameObject.SetActive(true);
 				// show unfriendly effect here (change model to skeletons)
 				GameObject swarm = GameObject.Find("Swarm");
 				swarm.GetComponent<SwarmAI>().Morale -= 20;

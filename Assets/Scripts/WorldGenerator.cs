@@ -29,7 +29,7 @@ public class WorldGenerator : MonoBehaviour {
 
 	private float appearDistance = 500.0f;
 	
-	private int maxSize = 16;
+	private int maxSize = 64;
 
 	private int blockSize = 4;
 	

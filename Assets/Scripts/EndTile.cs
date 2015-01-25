@@ -27,7 +27,7 @@ public class EndTile : MonoBehaviour {
 			//TODO - victory
 			Debug.Log("VICTORY");
 			GameObject.Find("GameManager").GetComponent<SandStorm>().VillageFound();
-			Invoke("Victory", 1.5f);
+			Invoke("Victory", 4.5f);
 		}
 	}
 
