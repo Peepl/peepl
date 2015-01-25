@@ -40,6 +40,8 @@ public class WorldGenerator : MonoBehaviour {
 	private List<Block> blocks = new List<Block>();
 
 	private Dictionary<int, int> tileTypesInScene = new Dictionary<int, int>();
+
+	private bool villageSpawned;
 	
 	public void Init(GameObject leaderGameObject) {
 		leaderTransform = leaderGameObject.transform;			
@@ -47,7 +49,7 @@ public class WorldGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		villageSpawned = false;
 		// cache tileinfos
 		for (int i = 0; i < prefabs.Count; i++) {
 
@@ -151,7 +153,7 @@ public class WorldGenerator : MonoBehaviour {
 
 		Vector3 pos = GetTileWorldPos(blockX, blockZ, tileX, tileZ, size);
 
-		if (Vector3.Distance(pos, Vector3.zero) < 60) {
+		if (Vector3.Distance(pos, Vector3.zero) < 80) {
 			return true;
 		}
 
@@ -189,7 +191,11 @@ public class WorldGenerator : MonoBehaviour {
 				}
 				else
 				{
-					//todo - Start village
+					if(!villageSpawned)
+					{
+						tileType = 11;
+						villageSpawned = true;
+					}
 				}
 
 				TileInfo info = tileInfo[tileType];

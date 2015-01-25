@@ -13,7 +13,7 @@ public class Starter : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-        TheLeader = Instantiate(LeaderPrefab, new Vector3(10.0f, 5.0f, 0.0f), Quaternion.identity) as GameObject;
+        TheLeader = Instantiate(LeaderPrefab, new Vector3(1.4f, 5.0f, 1.4f), Quaternion.identity) as GameObject;
         Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity) as GameObject;
         Swarm.name = "Swarm";
         Swarm.GetComponent<SwarmAI>().InitSwarm(TheLeader);
