@@ -13,6 +13,9 @@ public class GUIController : MonoBehaviour {
 
 	private float InfoPanelShowTime = 5.0f;
 
+	private float IntroTextShowTime = 10.0f;
+	private bool IntroTextShown = false;
+
     private long MoraleBlinkStartTime;
     private long PopulationBlinkStartTime;
 	// Use this for initialization
@@ -62,6 +65,11 @@ public class GUIController : MonoBehaviour {
 		UpdateCounters();
 
 		UpdateInfoPanel();
+
+		if (Time.time >= IntroTextShowTime && !IntroTextShown) {
+			IntroTextShown = true;
+			EventTriggered("Lead your tribe to a safe haven.");
+		}
 
     }
 
