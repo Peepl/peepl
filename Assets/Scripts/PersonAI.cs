@@ -65,7 +65,7 @@ public class PersonAI : MonoBehaviour {
         {
             rigidbody.velocity = MaxVelo * rigidbody.velocity.normalized;
         }
-        transform.position = new Vector3(transform.position.x, 1.1f, transform.position.z);
+        //transform.position = new Vector3(transform.position.x, 1.1f, transform.position.z);
         transform.rotation = Quaternion.identity;
         float angle = Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x);
         transform.Rotate(new Vector3(0.0f, 1.0f, 0.0f), angle);
