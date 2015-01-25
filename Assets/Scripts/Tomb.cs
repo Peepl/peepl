@@ -57,7 +57,7 @@ public class Tomb : MonoBehaviour {
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
 
-				guiController.EventTriggered("Holy tomb bring joy to the tribe.");
+				guiController.EventTriggered("The Holy tomb brings joy for the tribe .");
 			}
 			else 
 			{
