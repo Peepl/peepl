@@ -4,7 +4,12 @@ using System.Collections;
 public class Tomb : MonoBehaviour {
 	
 	GameColor Color;
+	public AudioClip goodClip;
+	public AudioClip badClip;
 	
+	private AudioSource goodAs;
+	private AudioSource badAs;
+    
 	private bool Friendly;
 	private bool Active;
 
@@ -18,7 +23,10 @@ public class Tomb : MonoBehaviour {
 		float goodChance = colorFriendly ? 0.75f : 0.25f;
 		Friendly = Random.Range(0.0f, 1.0f) < goodChance;
 		Active = true;
-		
+		badAs = this.gameObject.AddComponent<AudioSource>();
+		goodAs = this.gameObject.AddComponent<AudioSource>();
+		badAs.clip = badClip;
+		goodAs.clip = goodClip;
 	}
 	
 	void OnTriggerEnter(Collider collider)
@@ -41,7 +49,7 @@ public class Tomb : MonoBehaviour {
 				swarm.GetComponent<SwarmAI>().Morale += 30;
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
 
-				
+				goodAs.Play();
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
 			}
@@ -51,7 +59,7 @@ public class Tomb : MonoBehaviour {
 				GameObject swarm = GameObject.Find("Swarm");
 				swarm.GetComponent<SwarmAI>().Morale -= 20;
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
-				
+				badAs.Play();
 				Debug.Log("Unfriendly tomb triggered - no animation");
 			}
 		}

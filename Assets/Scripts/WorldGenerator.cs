@@ -151,7 +151,7 @@ public class WorldGenerator : MonoBehaviour {
 
 		Vector3 pos = GetTileWorldPos(blockX, blockZ, tileX, tileZ, size);
 
-		if (Vector3.Distance(pos, Vector3.zero) < 100) {
+		if (Vector3.Distance(pos, Vector3.zero) < 60) {
 			return true;
 		}
 
@@ -186,6 +186,10 @@ public class WorldGenerator : MonoBehaviour {
 
 				if (!IsCenterTile(blockX, blockZ, x, z, 1)) {
 					tileType = GetRandomTileType();
+				}
+				else
+				{
+					//todo - Start village
 				}
 
 				TileInfo info = tileInfo[tileType];

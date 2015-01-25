@@ -50,7 +50,7 @@ half4 frag (v2f i) : COLOR{
    half4 depth;
 	float4 n = tex2D(_Noise, i.uv*2.0);
 	float4 p = tex2D(_Perlin, i.uv*0.5+float2(_POffX, _POffY)*0.005);
-	p.r = p.r * n.x*_PerlinStrength;
+	p.r =0.02+ p.r * n.x*_PerlinStrength;
 	//depthValue =clamp(depthValue+depthValue*p.r, 0.0, 1.0);
    	depth.r = depthValue;
   	depth.g = depthValue;
@@ -71,7 +71,7 @@ half4 frag (v2f i) : COLOR{
 	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.12)*(4.25+p.r*2));
 	//float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
 	//smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
-	_FogStrength *= 1-smooth*0.31;
+	_FogStrength *= 1-smooth*0.45;
 	_FogStrength+=p.r;
 	float darken = dist>0.12? smooth :1.0;
 	darken +=_Day;

@@ -3,7 +3,11 @@ using System.Collections;
 
 public class OrbEvent : MonoBehaviour {
 
-	bool active;
+	private AudioSource eventActive;
+	public AudioClip eventActiveClip;
+
+    bool active;
+	bool Friendly;
 
 	Transform orbTransform;
 	
@@ -15,6 +19,10 @@ public class OrbEvent : MonoBehaviour {
 		orbTransform.gameObject.SetActive(false);
 
 		active = true;
+		Friendly = Random.Range(0.0f, 1.0f) < 0.25;
+
+		eventActive = this.gameObject.AddComponent<AudioSource>();
+		eventActive.clip = eventActiveClip;
 	}
 	
 	// Update is called once per frame
@@ -31,8 +39,16 @@ public class OrbEvent : MonoBehaviour {
 		
 		if ( collider.gameObject.tag.Equals("Person"))
 		{
+			if(Friendly)
+			{
+				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
+			}
+			else
+			{
+				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
+			}
 			active = false;
-
+			eventActive.Play();
 			orbTransform.gameObject.SetActive(true);
 
 			GameObject swarm = GameObject.Find("Swarm");

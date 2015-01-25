@@ -12,11 +12,14 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
-    private float m_MoraleLossSpeed = 0.002f;
+    private float m_MoraleLossSpeed = 0.004f;
     public GameObject Leader;
+
+	private bool ended = false;
 
 	// Use this for initialization
 	void Start () {
+		ended = false;
     }
 
     public int GetPopulation()
@@ -88,11 +91,22 @@ public class SwarmAI : MonoBehaviour {
             }
         }
     }
+	void gameover(){
+		Application.LoadLevel("gameover");
+	}
 
 	void FixedUpdate () {
         Morale -= m_MoraleLossSpeed;
-        if (Morale < 0.0f) Morale = 0.0f;
-
+        if (Morale < 0.0f || GetPopulation() == 0)
+		{
+			Morale = 0.0f;
+			if(!ended)
+			{
+				GameObject.Find("GameManager").GetComponent<SandStorm>().EndOfWorldStorm();
+				Invoke("gameover", 1.5f);
+			}
+			ended = true;
+		}
         for (int i = 0; i < m_People.Count-1; ++i)
         {
             for (int j = i + 1; j < m_People.Count; ++j)

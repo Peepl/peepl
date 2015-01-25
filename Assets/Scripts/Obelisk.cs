@@ -4,6 +4,11 @@ using System.Collections;
 public class Obelisk : MonoBehaviour {
 
     GameColor Color;
+	public AudioClip goodClip;
+	public AudioClip badClip;
+	
+	private AudioSource goodAs;
+	private AudioSource badAs;
 
     private bool Friendly;
     private bool Active;
@@ -19,6 +24,11 @@ public class Obelisk : MonoBehaviour {
         float goodChance = colorFriendly ? 0.75f : 0.25f;
         Friendly = Random.Range(0.0f, 1.0f) < goodChance;
         Active = true;
+
+		badAs = this.gameObject.AddComponent<AudioSource>();
+		goodAs = this.gameObject.AddComponent<AudioSource>();
+		badAs.clip = badClip;
+		goodAs.clip = goodClip;
 	}
 
     void OnTriggerEnter(Collider collider)
@@ -35,7 +45,10 @@ public class Obelisk : MonoBehaviour {
                 SwarmAI swarmai = swarm.GetComponent<SwarmAI>();
                 swarm.GetComponent<SwarmAI>().Bless();
 			//	transform.Find("obelisk").Find("obeliski").Find("bad").gameObject.SetActive(true);
-
+				rotTarget += 760;
+				rotate = true;
+                
+				goodAs.Play();
                 Debug.Log("Friendly obelisk triggered");
             }
             else 
@@ -44,14 +57,14 @@ public class Obelisk : MonoBehaviour {
                 GameObject swarm = GameObject.Find("Swarm");
                 swarm.GetComponent<SwarmAI>().KillInRadius(transform.position, 25.0f, 0.25f);
 
-				rotTarget += 360;
+				rotTarget += 760;
 				rotate = true;
 
 				if(swarm.GetComponent<SwarmAI>().TribeColor == GameColor.Blue)
 					transform.Find("obelisk").Find("obeliski").Find("blue").gameObject.SetActive(true);
 				else
 					transform.Find("obelisk").Find("obeliski").Find("red").gameObject.SetActive(true);
-
+				badAs.Play();
                 Debug.Log("Unfriendly obelisk triggered");
             }
         }

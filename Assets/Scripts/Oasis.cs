@@ -5,6 +5,12 @@ public class Oasis : MonoBehaviour {
 
     GameColor Color;
 
+	public AudioClip goodClip;
+	public AudioClip badClip;
+
+	private AudioSource goodAs;
+	private AudioSource badAs;
+
     private bool Friendly;
     private bool Active;
 
@@ -17,6 +23,11 @@ public class Oasis : MonoBehaviour {
         //Friendly = Random.Range(0.0f, 1.0f) < goodChance;
         Friendly = Random.Range(0.0f, 1.0f) < 0.25;
         Active = true;
+
+		badAs = this.gameObject.AddComponent<AudioSource>();
+		goodAs = this.gameObject.AddComponent<AudioSource>();
+		badAs.clip = badClip;
+		goodAs.clip = goodClip;
 	}
 
     void OnTriggerEnter(Collider collider)
@@ -40,6 +51,7 @@ public class Oasis : MonoBehaviour {
                 }
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
+				goodAs.Play();
             }
             else 
             {
@@ -49,6 +61,7 @@ public class Oasis : MonoBehaviour {
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 transform.Find("bad").gameObject.SetActive(true);
                 Debug.Log("Unfriendly oasis triggered");
+				badAs.Play();
             }
         }
     }

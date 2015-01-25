@@ -7,15 +7,23 @@ public class LeaderAI : MonoBehaviour {
     private float cachedAngle = 0.0f;
     public float MaxSpeed = 8.0f;
 
+	private bool fireDown = false;
+
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Fire1"))
         {
+			fireDown = true;
+		}
+		if(Input.GetButtonUp("Fire1"))
+			fireDown = false;
+		if(fireDown)
+		{
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
