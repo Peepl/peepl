@@ -14,6 +14,8 @@ public class Oasis : MonoBehaviour {
     private bool Friendly;
     private bool Active;
 
+	private GUIController guiController;
+
 	// Use this for initialization
 	void Start () {
         //Color = GameColor.Blue;
@@ -23,6 +25,8 @@ public class Oasis : MonoBehaviour {
         //Friendly = Random.Range(0.0f, 1.0f) < goodChance;
         Friendly = Random.Range(0.0f, 1.0f) < 0.25;
         Active = true;
+
+		guiController = GameObject.FindObjectOfType<GUIController>();
 
 		badAs = this.gameObject.AddComponent<AudioSource>();
 		goodAs = this.gameObject.AddComponent<AudioSource>();
@@ -46,11 +50,14 @@ public class Oasis : MonoBehaviour {
                 int bonuspeople = Random.Range(2, 6);
                 for (int i = 0; i < bonuspeople; ++i)
                 {
-                    swarmai.Morale = 100.0f;
+                    swarmai.Morale = Mathf.Max(swarmai.Morale, 100.0f);
                     GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 }
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
+
+				guiController.EventTriggered("Oasis found! Morale boosted!");
+
 				goodAs.Play();
             }
             else 
@@ -60,7 +67,10 @@ public class Oasis : MonoBehaviour {
                 swarm.GetComponent<SwarmAI>().Morale -= 20;
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 transform.Find("bad").gameObject.SetActive(true);
-                Debug.Log("Unfriendly oasis triggered");
+
+				guiController.EventTriggered("Mirage found! Morale degraded!");
+
+				Debug.Log("Unfriendly oasis triggered");
 				badAs.Play();
             }
         }

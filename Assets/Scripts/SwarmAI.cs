@@ -15,11 +15,14 @@ public class SwarmAI : MonoBehaviour {
     private float m_MoraleLossSpeed = 0.004f;
     public GameObject Leader;
 
+	private GUIController guiController;
+
 	private bool ended = false;
 
 	// Use this for initialization
 	void Start () {
 		ended = false;
+		guiController = GameObject.FindObjectOfType<GUIController>();
     }
 
     public int GetPopulation()
@@ -73,6 +76,9 @@ public class SwarmAI : MonoBehaviour {
             if ( !p.GetComponent<PersonAI>().IsSheltered)
             {
                 Debug.Log("Storm kill!");
+
+				guiController.SandStormKill();
+
                 KillPerson(p);
             }
         }
@@ -107,6 +113,16 @@ public class SwarmAI : MonoBehaviour {
 			}
 			ended = true;
 		}
+
+        for (int i = 0; i < m_People.Count; ++i)
+        {
+            if ( (m_People[i].transform.position - Leader.transform.position).magnitude > 100.0f )
+            {
+                KillPerson(m_People[i]);
+                --i;
+            }
+        }
+
         for (int i = 0; i < m_People.Count-1; ++i)
         {
             for (int j = i + 1; j < m_People.Count; ++j)
@@ -114,16 +130,21 @@ public class SwarmAI : MonoBehaviour {
                 Vector3 p1 = m_People[i].transform.position;
                 Vector3 p2 = m_People[j].transform.position;
                 Vector3 v = p2 - p1;
+                v.y = 0.0f;
                 float mag = v.magnitude;
                 float multiplier;
-                if (mag < 24.0f)
+                if (mag < 15.0f)
                 {
                     mag = Mathf.Max(1.0f, mag);
-                    multiplier = 0.8f / (mag * mag);
+                    multiplier = 30.0f / (mag * mag);
+                }
+                else if (mag < 70.0f)
+                {
+                    multiplier = -0.0005f * mag;
                 }
                 else
                 {
-                    multiplier = -0.001f * mag;
+                    multiplier = 0.0f;
                 }
                 m_People[i].GetComponent<Rigidbody>().AddForce(multiplier * -v);
                 m_People[j].GetComponent<Rigidbody>().AddForce(multiplier * v);

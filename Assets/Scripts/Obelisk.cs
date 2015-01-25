@@ -16,6 +16,8 @@ public class Obelisk : MonoBehaviour {
 	private bool rotate = false;
 	private int currot = 0;
 
+	private GUIController guiController;
+
 	// Use this for initialization
 	void Start () {
         Color = GameColor.Blue;
@@ -24,6 +26,8 @@ public class Obelisk : MonoBehaviour {
         float goodChance = colorFriendly ? 0.75f : 0.25f;
         Friendly = Random.Range(0.0f, 1.0f) < goodChance;
         Active = true;
+
+		guiController = GameObject.FindObjectOfType<GUIController>();
 
 		badAs = this.gameObject.AddComponent<AudioSource>();
 		goodAs = this.gameObject.AddComponent<AudioSource>();
@@ -50,6 +54,8 @@ public class Obelisk : MonoBehaviour {
                 
 				goodAs.Play();
                 Debug.Log("Friendly obelisk triggered");
+
+				guiController.EventTriggered("Holy Obelisk found. Bless you.");
             }
             else 
             {
@@ -66,7 +72,10 @@ public class Obelisk : MonoBehaviour {
 					transform.Find("obelisk").Find("obeliski").Find("red").gameObject.SetActive(true);
 				badAs.Play();
                 Debug.Log("Unfriendly obelisk triggered");
-            }
+
+				guiController.EventTriggered("It's Dark Obelisk. God damn...");
+                
+			}
         }
     }
 
