@@ -15,11 +15,14 @@ public class SwarmAI : MonoBehaviour {
     private float m_MoraleLossSpeed = 0.004f;
     public GameObject Leader;
 
+	private GUIController guiController;
+
 	private bool ended = false;
 
 	// Use this for initialization
 	void Start () {
 		ended = false;
+		guiController = GameObject.FindObjectOfType<GUIController>();
     }
 
     public int GetPopulation()
@@ -73,6 +76,9 @@ public class SwarmAI : MonoBehaviour {
             if ( !p.GetComponent<PersonAI>().IsSheltered)
             {
                 Debug.Log("Storm kill!");
+
+				guiController.SandStormKill();
+
                 KillPerson(p);
             }
         }
