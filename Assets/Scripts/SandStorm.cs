@@ -21,15 +21,24 @@ public class SandStorm : MonoBehaviour {
 	private long last =0;
 
 	private bool ending = false;
+	private bool victory;
 
 	// Use this for initialization
 	void Start () {
+		ending = false;
+		victory = false;
         Starttime = System.DateTime.Now.Ticks - 1 * Length;
 		dayStart = System.DateTime.Now.Ticks;
 		dayVal = 1f;
 		last = dayStart;
 	}
-
+	public void VillageFound(){
+		Starttime = System.DateTime.Now.Ticks;
+		dayVal = 1;
+		this.day = true;
+		ending = true;
+		victory = true;
+	}
 	public void EndOfWorldStorm(){
 		ending = true;
 	}
@@ -53,7 +62,7 @@ public class SandStorm : MonoBehaviour {
 		if(ending)
 		{
 			stormAS.Play();
-			Severity = Mathf.Min(Severity+0.05f, 5.0f);
+			Severity = Mathf.Max( Mathf.Min(Severity+0.05f*(victory?-1:1), 5.0f), 0);
 
 		}
 		else

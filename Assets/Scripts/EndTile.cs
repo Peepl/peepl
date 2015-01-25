@@ -26,9 +26,16 @@ public class EndTile : MonoBehaviour {
 			Active = false;
 			//TODO - victory
 			Debug.Log("VICTORY");
+			GameObject.Find("GameManager").GetComponent<SandStorm>().VillageFound();
+			Invoke("Victory", 1.5f);
 		}
 	}
-	
+
+	void Victory()
+	{
+		Application.LoadLevel("Victory");
+	}
+
 	void OnTriggerExit(Collider collider)
 	{
 		if (collider.gameObject.tag.Equals("Person"))
