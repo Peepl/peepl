@@ -36,6 +36,7 @@ public class SwarmAI : MonoBehaviour {
     public void AddPerson(GameObject leader)
     {
         GameObject tmp = Instantiate(CitizenPrefab, PersonAI.GetRandomOffset(), Quaternion.identity) as GameObject;
+        tmp.transform.parent = this.transform;
         tmp.GetComponent<PersonAI>().Leader = leader;
         m_People.Add(tmp);
     }
