@@ -11,13 +11,15 @@ public class Cavern : MonoBehaviour {
 	void Start () {
         Color = GameColor.Blue;
 
-	    Friendly = EventManager.IsFriendly( GameObject.Find("Swarm").GetComponent<SwarmAI>().TribeColor, Color);
 	}
 
     void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag.Equals("Person"))
         {
+            GameObject swarm = GameObject.Find("Swarm");
+            bool Friendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
+
             if ( Friendly )
             {
                 collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
@@ -27,6 +29,7 @@ public class Cavern : MonoBehaviour {
 
     void OnTriggerExit(Collider collider)
     {
+
         if (collider.gameObject.tag.Equals("Person"))
         {
             collider.gameObject.GetComponent<PersonAI>().IsSheltered = false;
@@ -35,6 +38,6 @@ public class Cavern : MonoBehaviour {
    
     // Update is called once per frame
 	void Update () {
-	
+
 	}
 }
