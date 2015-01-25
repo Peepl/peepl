@@ -34,9 +34,8 @@ public class Oasis : MonoBehaviour {
                 int bonuspeople = Random.Range(2, 6);
                 for (int i = 0; i < bonuspeople; ++i)
                 {
-                    swarmai.AddPerson(swarmai.Leader);
+                    swarmai.Morale = 100.0f;
                 }
-                swarm.GetComponent<SwarmAI>().Morale += 30;
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
             }

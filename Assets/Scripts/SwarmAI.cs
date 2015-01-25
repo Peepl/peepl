@@ -12,7 +12,7 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
-    private float m_MoraleLossSpeed = 0.005f;
+    private float m_MoraleLossSpeed = 0.002f;
     public GameObject Leader;
 
 	// Use this for initialization
@@ -62,7 +62,7 @@ public class SwarmAI : MonoBehaviour {
     public void StormDamage(float severity)
     {
         //if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
-        if (Random.Range(0.0f, 50.0f) < severity)
+        if (severity > 0.3f && Random.Range(0.0f, 40.0f) < severity * severity)
         {
             int randIndex = Random.Range(0, m_People.Count);
             GameObject p = m_People[randIndex];
