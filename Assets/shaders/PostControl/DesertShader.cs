@@ -13,6 +13,8 @@ public class DesertShader : ImageEffectBase {
 	public float day;
 	public Texture perlinTex;
 
+	public float endFade;
+
 	private float offx=0;
 	private float offy=0;
 
@@ -34,7 +36,10 @@ public class DesertShader : ImageEffectBase {
 		}
 		material.SetFloat("_PerlinStrength", perlinStrength);
 		material.SetFloat("_FogStrength", fogStrength);
-		material.SetFloat("_Day", day);
+		if(endFade > 1f)
+			endFade = 1f;
+		material.SetFloat("_fadeToEnd", endFade);
+        material.SetFloat("_Day", day);
 		//		material.SetFloat("_SpeedY", speedY);
 		material.SetColor("_Color", desertColor);
 		Graphics.Blit (source, destination, material);

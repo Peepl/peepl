@@ -51,20 +51,20 @@ public class OrbEvent : MonoBehaviour {
 	void OnTriggerEnter(Collider collider)
 	{
 		Debug.Log("orb trigger");
-
-		if (!active) return;
 		
 		if ( collider.gameObject.tag.Equals("Person") &&
             collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f)
 
 		{
-			orbScale = true;
+            if (Friendly) collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+            if (!active) return;
 
+            orbScale = true;
 			if(Friendly)
 			{
-				//orbTransform.Find("Sphere").gameObject.GetComponent<MeshRenderer>().material.color = new Color(0.8f,0.8f,1.0f);
-                
 				orbTransform = orbTransformGood;
+
+                collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
 
                 GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
 				orbTransform.Find("open").gameObject.SetActive(true);

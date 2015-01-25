@@ -62,13 +62,13 @@ public class SandStorm : MonoBehaviour {
 		if(ending)
 		{
 			stormAS.Play();
-			Severity = Mathf.Max( Mathf.Min(Severity+0.05f*(victory?-1:1), 5.0f), -10f);
+			Severity = Mathf.Max( Mathf.Min(Severity+0.2f*(victory?-1:1), 5.0f), -10f);
 
 		}
 		else
 		{
 
-		    if ( System.DateTime.Now.Ticks - Starttime > 2 * Length )
+		    if ( System.DateTime.Now.Ticks - Starttime > 4 * Length )
 	        {
 	            Debug.Log("starting storm");
 	            Starttime = System.DateTime.Now.Ticks;
@@ -117,7 +117,7 @@ public class SandStorm : MonoBehaviour {
 			float angle2 = Mathf.Sin( (float)(( ( (double)tickd))/((double) (dayLength+transition+nightLength+transition)*4)*Mathf.PI*2));
 			//Debug.Log ("angle " + angle+ " --- " + ( ( (float)System.DateTime.Now.Ticks))/((float) (dayLength+transition+nightLength+transition)));
 	        
-			GameObject.Find("mainlight").GetComponent<Light>().intensity = dayVal*0.4f+0.1f;
+			GameObject.Find("mainlight").GetComponent<Light>().intensity = dayVal*0.3f+0.2f;
 			GameObject.Find("mainlight").GetComponent<Light>().shadowStrength = dayVal*0.8f+0.2f;
 	        GameObject.Find("mainlight").transform.rotation = Quaternion.Euler(new Vector3(46f+angle*15f, 212f+angle*20f, 46f+(angle2)*15f));
 		}

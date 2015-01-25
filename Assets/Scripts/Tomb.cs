@@ -35,12 +35,14 @@ public class Tomb : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		if (!Active) return;
 		
 		if ( collider.gameObject.tag.Equals("Person") &&
             collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
 		{
-			Active = false;
+            if (Friendly) collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+            if (!Active) return;
+
+            Active = false;
 			if ( Friendly )
 			{
 				// show friendly effect here

@@ -15,6 +15,7 @@ public class SwarmAI : MonoBehaviour {
 	public float m_MoraleLossSpeed = 0.004f;//*0.75f*0.75f*0.75f*0.75f;
     public GameObject Leader;
 
+	public int blessCount;
 	private GUIController guiController;
 
 	private bool ended = false;
@@ -22,6 +23,7 @@ public class SwarmAI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		ended = false;
+		blessCount =0;
 		guiController = GameObject.FindObjectOfType<GUIController>();
     }
 
@@ -45,6 +47,7 @@ public class SwarmAI : MonoBehaviour {
 
     public void Bless()
     {
+		blessCount++;
         m_MoraleLossSpeed *= 0.75f;
     }
 
@@ -69,7 +72,7 @@ public class SwarmAI : MonoBehaviour {
     public void StormDamage(float severity)
     {
         //if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
-        if (severity > 0.3f && Random.Range(0.0f, 40.0f) < severity * severity)
+        if (severity > 0.4f && Random.Range(0.0f, 60.0f) < severity * severity)
         {
             int randIndex = Random.Range(0, m_People.Count);
             GameObject p = m_People[randIndex];

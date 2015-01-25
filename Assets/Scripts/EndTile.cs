@@ -9,12 +9,17 @@ public class EndTile : MonoBehaviour {
 
 	public bool Active;
 
+	private GUIController guiController;
+
 	// Use this for initialization
 	void Start () {
 		Active = true;
 		
 		goodAs = this.gameObject.AddComponent<AudioSource>();
 		goodAs.clip = goodClip;
+		guiController = GameObject.FindObjectOfType<GUIController>();
+        
+
 	}
 
 	void OnTriggerEnter(Collider collider)
@@ -27,9 +32,22 @@ public class EndTile : MonoBehaviour {
 			Active = false;
 			//TODO - victory
 			Debug.Log("VICTORY");
-			GameObject.Find("GameManager").GetComponent<SandStorm>().VillageFound();
-			Invoke("Victory", 4.5f);
+			goodAs.Play();
+			Invoke("VictoryPrePre", 2.5f);
+            Invoke("VictoryPre", 3.5f);
+//			GameObject.Find("GameManager").GetComponent<SandStorm>().VillageFound();
+			Invoke("Victory", 6.5f);
 		}
+	}
+	void VictoryPrePre()
+	{
+		guiController.EventTriggered("What do we do now?");
+		
+    }
+    void VictoryPre()
+	{
+        
+		GameObject.Find("GameManager").GetComponent<SandStorm>().VillageFound();
 	}
 
 	void Victory()

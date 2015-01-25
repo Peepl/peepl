@@ -37,11 +37,13 @@ public class Obelisk : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (!Active) return;
-
         if (collider.gameObject.tag.Equals("Person") &&
             collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
         {
+            if (Friendly) collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+            if (!Active) return;
+
+
             Active = false;
             if ( Friendly )
             {
@@ -52,6 +54,8 @@ public class Obelisk : MonoBehaviour {
 			//	transform.Find("obelisk").Find("obeliski").Find("bad").gameObject.SetActive(true);
 				rotTarget += 760;
 				rotate = true;
+                collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+
                 
 				goodAs.Play();
                 Debug.Log("Friendly obelisk triggered");
@@ -62,7 +66,7 @@ public class Obelisk : MonoBehaviour {
             {
                 // show unfriendly effect here (death ray)
                 GameObject swarm = GameObject.Find("Swarm");
-                swarm.GetComponent<SwarmAI>().KillInRadius(transform.position, 25.0f, 0.25f);
+                swarm.GetComponent<SwarmAI>().KillInRadius(transform.position, 50.0f, 0.5f);
 
 				rotTarget += 760;
 				rotate = true;
