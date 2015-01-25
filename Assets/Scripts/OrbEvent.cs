@@ -60,14 +60,14 @@ public class OrbEvent : MonoBehaviour {
                 GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
 				orbTransform.Find("open").gameObject.SetActive(true);
 
-				guiController.EventTriggered("Found the holy orb. Let there be light.");                
+				guiController.EventTriggered("Let there be light.");                
 			}
 			else
 			{
 				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
 				orbTransform.Find("open").gameObject.SetActive(true);
 							
-				guiController.EventTriggered("It's the dark orb of the night!");                
+				guiController.EventTriggered("Darkness envelopes the tribe.");                
             }
 			active = false;
 			eventActive.Play();
