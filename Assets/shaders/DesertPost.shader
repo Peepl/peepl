@@ -71,7 +71,7 @@ half4 frag (v2f i) : COLOR{
 	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.12)*(4.25+p.r*2));
 	//float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
 	//smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
-	_FogStrength *= 1-smooth*0.45;
+	_FogStrength *= 1-smooth*0.15;
 	_FogStrength+=p.r;
 	float darken = dist>0.12? smooth :1.0;
 	darken +=_Day;

@@ -35,12 +35,13 @@ public class CameraAI : MonoBehaviour {
         }
         else
         {
-            storm.perlinStrength = 1.0f + 2.5f * stormSeverity * stormSeverity;
+            storm.perlinStrength = 0.5f + 0.5f * stormSeverity * stormSeverity;
 	        storm.speedX = 1.4f * stormSeverity+0.24f;
 	        storm.speedY = 1.3f * stormSeverity+0.24f;
 			//storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0);
-			storm.desertColor = new Color(208f/255f* stormSeverity*(day+0.2f),189f/255f* stormSeverity*(day+0.2f),89f/255f* stormSeverity*(day+0.2f));
-	        storm.fogStrength = 0.8f + 3.0f * stormSeverity * stormSeverity;
+		//	storm.desertColor = new Color(208f/255f* stormSeverity*(day+0.2f),189f/255f* stormSeverity*(day+0.2f),89f/255f* stormSeverity*(day+0.2f));
+            storm.desertColor = new Color(60f/255f* stormSeverity*(day+0.2f),28f/255f* stormSeverity*(day+0.2f),6f/255f* stormSeverity*(day+0.2f));
+	        storm.fogStrength = 0.6f + 1.4f * stormSeverity * stormSeverity;
 			storm.day = day;
 		}
     }
