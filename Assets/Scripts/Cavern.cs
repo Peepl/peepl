@@ -10,11 +10,11 @@ public class Cavern : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Color = GameColor.Blue;
-        GameObject swarm = GameObject.Find("Swarm");
-        //bool colorFriendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
-        bool colorFriendly = true;
+        GameObject swarm = GameObject.FindGameObjectWithTag("Swarm");
+        bool colorFriendly = EventManager.IsFriendly(swarm.GetComponent<SwarmAI>().TribeColor, Color);
         float goodChance = colorFriendly ? 0.75f : 0.25f;
         Friendly = Random.Range(0.0f, 1.0f) < goodChance;
+        Debug.Log("cavern is " + Friendly);
 	}
 
     void OnTriggerEnter(Collider collider)
