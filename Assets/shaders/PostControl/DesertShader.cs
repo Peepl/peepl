@@ -27,7 +27,6 @@ public class DesertShader : ImageEffectBase {
 		}
 		else
 		{
-			material.SetTexture("_Perlin", perlinTex);
 			material.SetFloat("_POffX", offx);
 			material.SetFloat("_POffY", offy);
 			offx+=speedX;
@@ -38,7 +37,6 @@ public class DesertShader : ImageEffectBase {
 		material.SetFloat("_Day", day);
 		//		material.SetFloat("_SpeedY", speedY);
 		material.SetColor("_Color", desertColor);
-		material.SetTexture("_Noise", noise);
 		Graphics.Blit (source, destination, material);
 
 	}
@@ -51,6 +49,10 @@ public class DesertShader : ImageEffectBase {
 			perlin = new PerlinNoise(512,512,6	);
 			perlin.update(0,0);
 		}
+		else
+			material.SetTexture("_Perlin", perlinTex);
+		material.SetTexture("_Noise", noise);
+
 		material.SetVector("_Center", new Vector2(0.5f, 0.5f));
     }
 }

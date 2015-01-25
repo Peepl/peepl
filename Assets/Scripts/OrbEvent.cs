@@ -9,6 +9,8 @@ public class OrbEvent : MonoBehaviour {
     bool active;
 	bool Friendly;
 
+	bool orbScale = false;
+
 	Transform orbTransform;
 	
 	// Use this for initialization
@@ -27,8 +29,15 @@ public class OrbEvent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-	
+		if(orbScale)
+		{
+			if(orbTransform.localScale.x > 1f)
+			{
+				orbScale = false;
+				orbTransform.localScale = new Vector3(1f,1f,1f);
+			}
+			orbTransform.localScale = new Vector3(orbTransform.localScale.x+0.04f,orbTransform.localScale.x+0.04f,orbTransform.localScale.x+0.04f);
+		}
 	}
 
 	void OnTriggerEnter(Collider collider)
@@ -39,16 +48,22 @@ public class OrbEvent : MonoBehaviour {
 		
 		if ( collider.gameObject.tag.Equals("Person"))
 		{
+			orbScale = true;
 			if(Friendly)
 			{
-				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
+				orbTransform.Find("Sphere").gameObject.GetComponent<MeshRenderer>().material.color = new Color(0.8f,0.8f,1.0f);
+                
+                GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
+				orbTransform.Find("open").gameObject.SetActive(true);
 			}
 			else
 			{
 				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
-			}
+				orbTransform.Find("open").gameObject.SetActive(true);
+            }
 			active = false;
 			eventActive.Play();
+			orbTransform.localScale = new Vector3(0,0,0);
 			orbTransform.gameObject.SetActive(true);
 
 			GameObject swarm = GameObject.Find("Swarm");
