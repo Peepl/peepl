@@ -168,7 +168,7 @@ public class WorldGenerator : MonoBehaviour {
 
 		Vector3 pos = GetTileWorldPos(blockX, blockZ, tileX, tileZ, size);
 
-		if (Vector3.Distance(pos, Vector3.zero) < 80) {
+		if (Vector3.Distance(pos, Vector3.zero) < 150) {
 			return true;
 		}
 
@@ -196,21 +196,31 @@ public class WorldGenerator : MonoBehaviour {
 		                             0.0f,
 		                             -(float)maxSize * tileSize / 2.0f + (float)blockZ * blockWorldSize);
 
+		int blocksPerRow = maxSize / blockSize;
+        
 		for (int z = 0; z < blockSize; z++) {
 			for (int x = 0; x < blockSize; x++) {
 
+
 				int tileType = 0;
 
-				if (!IsCenterTile(blockX, blockZ, x, z, 1)) {
-					tileType = GetRandomTileType();
-				}
-				else
-				{
+				if (blockX == (blocksPerRow / 2) &&
+				    blockZ == (blocksPerRow / 2)) {
+
 					if(!villageSpawned)
 					{
 						tileType = 11;
 						villageSpawned = true;
+						
+					} else {
+
+						tileType = 0;
 					}
+
+				} else {
+				
+					tileType = GetRandomTileType();                
+
 				}
 
 				TileInfo info = tileInfo[tileType];
