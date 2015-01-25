@@ -19,8 +19,8 @@ public class Starter : MonoBehaviour {
 
 		Debug.Log ("Get Village pos");
 
-		TheLeader = Instantiate(LeaderPrefab, new Vector3(50.0f, 5.0f, -20.0f) + gen.GetVillagePosition(), Quaternion.identity) as GameObject;
-        Swarm = Instantiate(SwarmPrefab, new Vector3(0.0f, 0.0f, 0.0f) + gen.GetVillagePosition(), Quaternion.identity) as GameObject;
+		TheLeader = Instantiate(LeaderPrefab, new Vector3(0.0f, 5.0f, -13.0f) + gen.GetVillagePosition(), Quaternion.identity) as GameObject;
+        Swarm = Instantiate(SwarmPrefab, TheLeader.transform.position, Quaternion.identity) as GameObject;
         Swarm.name = "Swarm";
         Swarm.GetComponent<SwarmAI>().InitSwarm(TheLeader);
 		World.GetComponent<WorldGenerator>().SetLeader(TheLeader);
