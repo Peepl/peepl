@@ -8,12 +8,17 @@ public class SwarmAI : MonoBehaviour {
 	public GameObject BloodPrefab;
 
     public int People = 25;
-    public int Morale = 100;
+    public float Morale = 100;
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
 	// Use this for initialization
 	void Start () {
+    }
+
+    public int GetPopulation()
+    {
+        return m_People.Count * 10;
     }
 
     public void InitSwarm(GameObject leader)
@@ -35,18 +40,24 @@ public class SwarmAI : MonoBehaviour {
         m_People.Add(tmp);
     }
 
+    public void KillPerson(GameObject p )
+    {
+        GameObject blood = Instantiate(BloodPrefab, p.transform.position, p.transform.rotation) as GameObject;
+        m_People.Remove(p);
+        Destroy(p);
+    }
+
     public void StormDamage(float severity)
     {
-        if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
-        //if (Random.Range(0.0f, 50.0f) < severity)
+        //if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
+        if (Random.Range(0.0f, 50.0f) < severity)
         {
             int randIndex = Random.Range(0, m_People.Count);
             GameObject p = m_People[randIndex];
             if ( !p.GetComponent<PersonAI>().IsSheltered)
             {
                 Debug.Log("Storm kill!");
-                m_People.Remove(p);
-                Destroy(p);
+                KillPerson(p);
             }
         }
     }
@@ -59,16 +70,16 @@ public class SwarmAI : MonoBehaviour {
             if ((p.transform.position - center).magnitude <= radius && Random.Range(0.0f, 1.0f) < chance)
             {
 				//Add blood
-				GameObject blood = Instantiate(BloodPrefab, p.transform.position, p.transform.rotation) as GameObject;
-                m_People.Remove(p);
-                Destroy(p);
+                KillPerson(p);
                 i--;
             }
         }
     }
 
-	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
+        Morale -= 0.01f;
+        if (Morale < 0.0f) Morale = 0.0f;
+
         for (int i = 0; i < m_People.Count-1; ++i)
         {
             for (int j = i + 1; j < m_People.Count; ++j)

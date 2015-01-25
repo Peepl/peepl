@@ -6,6 +6,8 @@ public class PersonAI : MonoBehaviour {
     public GameObject Leader;
 
     private Vector3 offset;
+    private GameObject m_Swarm;
+
     public static float Radius = 15.0f;
     public static float MaxVelo = 5.0f;
 
@@ -24,6 +26,7 @@ public class PersonAI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         offset = GetRandomOffset();
+        m_Swarm = GameObject.Find("Swarm");
 	}
 	
     void OnCollisionEnter(Collision collision)
@@ -35,20 +38,28 @@ public class PersonAI : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (Random.Range(1, 300) < 1)
         {
             offset = GetRandomOffset();
         }
 
-        Vector3 v = offset + Leader.transform.position - transform.position;
+        //Vector3 v = offset + Leader.transform.position - transform.position;
+        Vector3 v = Leader.transform.position - transform.position;
         float mag = 0.0f;
-        if (v.magnitude > 5.0f && v.magnitude < 50.0f)
+        float xzDistSquared = v.x * v.x + v.z * v.z;
+        if (xzDistSquared < 10.0f)
         {
-            mag = 200.0f / Mathf.Max(1.0f, v.magnitude);
+            mag = -100.0f / Mathf.Max(1.0f, xzDistSquared);
+        } else if (xzDistSquared < 1000000.0f)
+        {
+            float morale = m_Swarm.GetComponent<SwarmAI>().Morale;
+            mag = morale * 2.0f / Mathf.Sqrt(xzDistSquared);
         }
         v.Normalize();
-        rigidbody.AddForce( mag * v );
+        //rigidbody.AddForce( morale * mag * v );
+        rigidbody.AddForce(mag * v);
+        rigidbody.AddForce(1.2f * offset);
 
         if (rigidbody.velocity.magnitude > MaxVelo)
         {
