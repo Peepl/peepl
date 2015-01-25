@@ -23,7 +23,7 @@ public class LeaderAI : MonoBehaviour {
             {
                 //Debug.Log("Mouse Down Hit Terrain " + hit.point);
                 target = hit.point;
-                target.y = 0.0f;
+                //target.y = 0.0f;
             }
         }
 
