@@ -18,7 +18,7 @@ public class CameraAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = new Vector3(leader.transform.position.x-Distance, leader.transform.position.y + Height, leader.transform.position.z - Distance);
+        transform.position = new Vector3(leader.transform.position.x+Distance, leader.transform.position.y + Height, leader.transform.position.z - Distance);
         transform.LookAt(leader.transform.position);
         float stormSeverity = GameObject.Find("GameManager").GetComponent<SandStorm>().Severity;
         DesertShader storm = GetComponent<DesertShader>();
