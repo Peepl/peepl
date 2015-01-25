@@ -40,6 +40,8 @@ public class Tomb : MonoBehaviour {
 					swarmai.AddPerson(swarmai.Leader);
 				}
 				swarm.GetComponent<SwarmAI>().Morale += 30;
+                GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
+
 				
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
@@ -49,6 +51,7 @@ public class Tomb : MonoBehaviour {
 				// show unfriendly effect here (change model to skeletons)
 				GameObject swarm = GameObject.Find("Swarm");
 				swarm.GetComponent<SwarmAI>().Morale -= 20;
+                GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
 				
 				Debug.Log("Unfriendly tomb triggered - no animation");
 			}

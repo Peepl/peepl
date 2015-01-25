@@ -12,7 +12,7 @@ public class SwarmAI : MonoBehaviour {
     public GameColor TribeColor;
 
     private List<GameObject> m_People;
-    private float m_MoraleLossSpeed = 0.002f;
+    private float m_MoraleLossSpeed = 0.001f;
     public GameObject Leader;
 
 	// Use this for initialization
@@ -57,6 +57,7 @@ public class SwarmAI : MonoBehaviour {
         GameObject blood = Instantiate(BloodPrefab, p.transform.position, p.transform.rotation) as GameObject;
         m_People.Remove(p);
         Destroy(p);
+        GameObject.Find("GameManager").GetComponent<GUIController>().PopulationChanged();
     }
 
     public void StormDamage(float severity)
@@ -89,7 +90,7 @@ public class SwarmAI : MonoBehaviour {
     }
 
 	void FixedUpdate () {
-        Morale -= 0.01f;
+        Morale -= m_MoraleLossSpeed;
         if (Morale < 0.0f) Morale = 0.0f;
 
         for (int i = 0; i < m_People.Count-1; ++i)

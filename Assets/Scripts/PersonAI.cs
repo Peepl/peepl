@@ -54,8 +54,8 @@ public class PersonAI : MonoBehaviour {
             mag = -100.0f / Mathf.Max(1.0f, xzDistSquared);
         } else if (xzDistSquared < 2000000.0f)
         {
-            float morale = m_Swarm.GetComponent<SwarmAI>().Morale;
-            mag = morale * 2.5f / Mathf.Sqrt(xzDistSquared);
+            float morale = 0.01f * m_Swarm.GetComponent<SwarmAI>().Morale;
+            mag = 100.0f * Mathf.Sqrt(morale) * 2.5f / Mathf.Sqrt(xzDistSquared);
         }
         v.Normalize();
         //rigidbody.AddForce( morale * mag * v );
