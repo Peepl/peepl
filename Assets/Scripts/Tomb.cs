@@ -15,6 +15,8 @@ public class Tomb : MonoBehaviour {
 
 	private GameObject good;
 
+	private GUIController guiController;
+
 	// Use this for initialization
 	void Start () {
 		Color = GameColor.Blue;
@@ -27,6 +29,8 @@ public class Tomb : MonoBehaviour {
 		goodAs = this.gameObject.AddComponent<AudioSource>();
 		badAs.clip = badClip;
 		goodAs.clip = goodClip;
+
+		guiController = GameObject.FindObjectOfType<GUIController>();
 	}
 	
 	void OnTriggerEnter(Collider collider)
@@ -52,6 +56,8 @@ public class Tomb : MonoBehaviour {
 				goodAs.Play();
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
+
+				guiController.EventTriggered("Holy tomb found. Morale boosted.");
 			}
 			else 
 			{
@@ -62,6 +68,9 @@ public class Tomb : MonoBehaviour {
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
 				badAs.Play();
 				Debug.Log("Unfriendly tomb triggered - no animation");
+
+				guiController.EventTriggered("Dark tomb found. Morale degraded");
+                
 			}
 		}
 	}
