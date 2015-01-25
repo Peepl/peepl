@@ -9,6 +9,8 @@ public class PersonAI : MonoBehaviour {
     public static float Radius = 25.0f;
     public static float MaxVelo = 5.0f;
 
+    public bool IsSheltered;
+
     public static Vector3 GetRandomOffset()
     {
         Vector3 r = new Vector3();
