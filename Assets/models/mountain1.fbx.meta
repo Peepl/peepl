@@ -9,6 +9,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: Plane.031
     4300002: mountain1
+    6400000: //RootNode
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -31,7 +32,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 25
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

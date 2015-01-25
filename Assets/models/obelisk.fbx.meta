@@ -13,6 +13,8 @@ ModelImporter:
     3300002: obelisk
     4300000: obeliskmaa
     4300002: obelisk
+    6400000: obelisk
+    6400002: //RootNode
     7400000: obeliskmaa|hahmo.002Action
     7400002: obeliskmaa|hahmo.003Action
     7400004: obeliskmaa|hahmo.004Action
@@ -57,7 +59,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 25
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
