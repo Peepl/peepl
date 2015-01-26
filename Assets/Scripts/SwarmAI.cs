@@ -116,14 +116,18 @@ public class SwarmAI : MonoBehaviour {
                 Vector3 v = p2 - p1;
                 float mag = v.magnitude;
                 float multiplier;
-                if (mag < 24.0f)
+                if (mag < 20.0f)
                 {
                     mag = Mathf.Max(1.0f, mag);
                     multiplier = 0.8f / (mag * mag);
                 }
+                else if (mag < 60.0f)
+                {
+                    multiplier = -0.0005f * mag;
+                }
                 else
                 {
-                    multiplier = -0.001f * mag;
+                    multiplier = 0.0f;
                 }
                 m_People[i].GetComponent<Rigidbody>().AddForce(multiplier * -v);
                 m_People[j].GetComponent<Rigidbody>().AddForce(multiplier * v);
