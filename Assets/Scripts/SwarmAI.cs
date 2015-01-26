@@ -72,7 +72,7 @@ public class SwarmAI : MonoBehaviour {
     public void StormDamage(float severity)
     {
         //if ( Random.Range(0.0f, 1.0f) < severity && m_People.Count > 0 )
-        if (severity > 0.3f && Random.Range(0.0f, 40.0f) < severity * severity)
+        if (severity > 0.4f && Random.Range(0.0f, 60.0f) < severity * severity)
         {
             int randIndex = Random.Range(0, m_People.Count);
             GameObject p = m_People[randIndex];
