@@ -16,6 +16,11 @@ public class PersonAI : MonoBehaviour {
 
     public bool IsSheltered;
 
+    public float GetDistanceToLeader()
+    {
+        return (transform.position - Leader.transform.position).magnitude;
+    }
+
     public static Vector3 GetRandomOffset()
     {
         Vector3 r = new Vector3();

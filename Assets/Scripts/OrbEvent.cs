@@ -50,7 +50,9 @@ public class OrbEvent : MonoBehaviour {
 
 		if (!active) return;
 		
-		if ( collider.gameObject.tag.Equals("Person"))
+		if ( collider.gameObject.tag.Equals("Person") &&
+            collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f)
+
 		{
 			orbScale = true;
 			if(Friendly)
