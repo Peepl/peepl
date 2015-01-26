@@ -66,7 +66,7 @@ public class SwarmAI : MonoBehaviour {
         GameObject blood = Instantiate(BloodPrefab, p.transform.position, p.transform.rotation) as GameObject;
         m_People.Remove(p);
         Destroy(p);
-        Morale -= 2.0f;
+        Morale -= 1.0f;
         GameObject.Find("GameManager").GetComponent<GUIController>().PopulationChanged();
         GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
     }

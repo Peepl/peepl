@@ -67,7 +67,10 @@ public class PersonAI : MonoBehaviour {
         }
         v.Normalize();
         //rigidbody.AddForce( morale * mag * v );
-        rigidbody.AddForce(mag * v);
+        if (mag > 0.0f)
+        {
+            rigidbody.AddForce(mag * v);
+        }
         rigidbody.AddForce(1.1f * offset);
 
         if (rigidbody.velocity.magnitude > MaxVelo)
