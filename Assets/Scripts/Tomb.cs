@@ -58,7 +58,7 @@ public class Tomb : MonoBehaviour {
 				Debug.Log("Friendly tomb triggered - set good visible");
 				transform.Find("good").gameObject.SetActive(true);
 
-				guiController.EventTriggered("Holy tomb found. Morale boosted.");
+				guiController.EventTriggered("The Holy tomb brings joy for the tribe .");
 			}
 			else 
 			{
@@ -70,7 +70,7 @@ public class Tomb : MonoBehaviour {
 				badAs.Play();
 				Debug.Log("Unfriendly tomb triggered - no animation");
 
-				guiController.EventTriggered("Dark tomb found. Morale degraded");
+				guiController.EventTriggered("The gods have abandoned this place.");
                 
 			}
 		}

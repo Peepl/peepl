@@ -50,7 +50,7 @@ public class GUIController : MonoBehaviour {
 	public void SandStormKill() {
 
 		if (!InfoPanel.activeSelf) {
-			EventTriggered("Sand storm kills.");
+			EventTriggered("The storm rages.");
 		}
 	}
 

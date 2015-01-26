@@ -57,7 +57,7 @@ public class Oasis : MonoBehaviour {
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
 
-				guiController.EventTriggered("Oasis found! Morale boosted!");
+				guiController.EventTriggered("Oasis refreshes the tribe.");
 
 				goodAs.Play();
             }
@@ -69,7 +69,7 @@ public class Oasis : MonoBehaviour {
                 GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 transform.Find("bad").gameObject.SetActive(true);
 
-				guiController.EventTriggered("Mirage found! Morale degraded!");
+				guiController.EventTriggered("Just another mirage.");
 
 				Debug.Log("Unfriendly oasis triggered");
 				badAs.Play();
