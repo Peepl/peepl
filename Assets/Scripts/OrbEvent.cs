@@ -27,7 +27,7 @@ public class OrbEvent : MonoBehaviour {
 		orbTransformBad.gameObject.SetActive(false);
         
 		active = true;
-		Friendly = Random.Range(0.0f, 1.0f) < 0.25;
+		Friendly = Random.Range(0.0f, 1.0f) < 0.5;
 
 		guiController = GameObject.FindObjectOfType<GUIController>();
 
