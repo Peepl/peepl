@@ -12,6 +12,8 @@ public class OrbEvent : MonoBehaviour {
 	bool orbScale = false;
 
 	Transform orbTransform;
+
+	GUIController guiController;
 	
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class OrbEvent : MonoBehaviour {
 
 		active = true;
 		Friendly = Random.Range(0.0f, 1.0f) < 0.25;
+
+		guiController = GameObject.FindObjectOfType<GUIController>();
 
 		eventActive = this.gameObject.AddComponent<AudioSource>();
 		eventActive.clip = eventActiveClip;
@@ -55,11 +59,15 @@ public class OrbEvent : MonoBehaviour {
                 
                 GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
 				orbTransform.Find("open").gameObject.SetActive(true);
+
+				guiController.EventTriggered("Found the holy orb. Let there be light.");                
 			}
 			else
 			{
 				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
 				orbTransform.Find("open").gameObject.SetActive(true);
+							
+				guiController.EventTriggered("It's the dark orb of the night!");                
             }
 			active = false;
 			eventActive.Play();
