@@ -114,14 +114,15 @@ public class SwarmAI : MonoBehaviour {
                 Vector3 p1 = m_People[i].transform.position;
                 Vector3 p2 = m_People[j].transform.position;
                 Vector3 v = p2 - p1;
+                v.y = 0.0f;
                 float mag = v.magnitude;
                 float multiplier;
-                if (mag < 20.0f)
+                if (mag < 15.0f)
                 {
                     mag = Mathf.Max(1.0f, mag);
-                    multiplier = 0.8f / (mag * mag);
+                    multiplier = 30.0f / (mag * mag);
                 }
-                else if (mag < 60.0f)
+                else if (mag < 70.0f)
                 {
                     multiplier = -0.0005f * mag;
                 }
