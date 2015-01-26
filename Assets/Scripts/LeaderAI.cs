@@ -42,12 +42,12 @@ public class LeaderAI : MonoBehaviour {
         {
             rigidbody.velocity = MaxSpeed * rigidbody.velocity.normalized;
         }
-		var moralspeed = GameObject.Find("Swarm").GetComponent<SwarmAI>().m_MoraleLossSpeed;
-
+		var moralspeed =GameObject.Find("Swarm").GetComponent<SwarmAI>().blessCount;
+		Debug.Log(moralspeed);
 		this.sphere.localScale = new Vector3(
-			((0.004f-moralspeed))*606.3f+0.3f,
-			((0.004f-moralspeed))*606.3f+0.3f,
-			((0.004f-moralspeed))*606.3f+0.3f
+			moralspeed*0.2f+0.3f,
+			moralspeed*0.2f+0.3f,
+			moralspeed*0.2f+0.3f
 			);
         transform.rotation = Quaternion.identity;
 
