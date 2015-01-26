@@ -67,11 +67,18 @@ public class PersonAI : MonoBehaviour {
             rigidbody.velocity = MaxVelo * rigidbody.velocity.normalized;
         }
 
-        if (rigidbody.velocity.magnitude > 1.0f)
+        if (rigidbody.velocity.magnitude > 4.0f)
         {
-            cachedAngle = Mathf.Atan2(rigidbody.velocity.x, rigidbody.velocity.z);
+            cachedAngle = Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x) + 90.0f;
+            //cachedAngle = Mathf.Atan2(1.0f, 0.0f);
+            //Debug.Log(180.0f * cachedAngle / 3.14159f);
+
+            //cachedAngle = Mathf.Atan2(-rigidbody.velocity.z, rigidbody.velocity.x);
         }
 
-        transform.localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
+        transform.localEulerAngles = new Vector3(0.0f, transform.localEulerAngles.y, 0.0f);
+
+        transform.FindChild("people").localEulerAngles = new Vector3(0.0f, -transform.localEulerAngles.y - 180.0f * cachedAngle/3.14159f, 0.0f);
+        //transform.FindChild("people").localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
     }
 }
