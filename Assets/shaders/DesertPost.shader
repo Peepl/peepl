@@ -26,6 +26,7 @@ float _Angle;
 float _Day;
 float _POffX;
 float _POffY;
+float _fadeToEnd;
 
 struct v2f {
    float4 pos : SV_POSITION;
@@ -68,14 +69,14 @@ half4 frag (v2f i) : COLOR{
 	
 //	_FogStrength = dist>0.1? smoothstep(0.0,_FogStrength, (dist-0.1)*2)+_FogStrength/6.0:_FogStrength/6.0;
 	//_FogStrength = 0;
-	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.12)*(4.25+p.r*2));
+	float smooth = 1.0-smoothstep(0.0,1.0, (dist-0.17)*(4.25+p.r*2));
 	//float border = smooth > 0.54 && smooth < 0.57 ? 0.1 : 0.0;
 	//smooth = smooth > 0.30 && smooth < 0.38 ? 73.0 : smooth;
 	_FogStrength *= 1-smooth*0.15;
 	_FogStrength+=p.r;
-	float darken = dist>0.12? smooth :1.0;
+	float darken = dist>0.17? smooth :1.0;
 	darken +=_Day;
-	darken = clamp(darken,0, 1);
+	darken = clamp(darken,0.04, 1);
 	
 	c*= darken;
 	c.r = lerp(c.r, c.r*max(0.01,(1-depthValue)) + depthValue*_Color.r , _FogStrength);
@@ -84,6 +85,8 @@ half4 frag (v2f i) : COLOR{
 	c*= clamp(darken*p.r,0.8,1.0);
 //	c+=float4(border,border,border,border);
     depth.a = 1;
+    c = c*(1.0-_fadeToEnd)+float4(193/255.0,151/255.0,85.0/255.0,1.0)*_fadeToEnd;
+    
     return c;
 }
 ENDCG

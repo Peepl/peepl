@@ -11,17 +11,21 @@ public class OrbEvent : MonoBehaviour {
 
 	bool orbScale = false;
 
+	Transform orbTransformGood;
+	Transform orbTransformBad;
 	Transform orbTransform;
-
+    
 	GUIController guiController;
 	
 	// Use this for initialization
 	void Start () {
 	
-		orbTransform = transform.FindChild("EvilSphere");
-
-		orbTransform.gameObject.SetActive(false);
-
+		orbTransformGood = transform.FindChild("good");
+		orbTransformBad = transform.FindChild("bad");
+        
+		orbTransformGood.gameObject.SetActive(false);
+		orbTransformBad.gameObject.SetActive(false);
+        
 		active = true;
 		Friendly = Random.Range(0.0f, 1.0f) < 0.25;
 
@@ -58,7 +62,8 @@ public class OrbEvent : MonoBehaviour {
             orbScale = true;
 			if(Friendly)
 			{
-				orbTransform.Find("Sphere").gameObject.GetComponent<MeshRenderer>().material.color = new Color(0.8f,0.8f,1.0f);
+				orbTransform = orbTransformGood;
+
                 collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
 
                 GameObject.Find("GameManager").GetComponent<SandStorm>().ForceDay();
@@ -68,11 +73,14 @@ public class OrbEvent : MonoBehaviour {
 			}
 			else
 			{
-				GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
+				orbTransform = orbTransformBad;
+                
+                GameObject.Find("GameManager").GetComponent<SandStorm>().ForceNight();
 				orbTransform.Find("open").gameObject.SetActive(true);
 							
 				guiController.EventTriggered("Darkness envelopes the tribe.");                
             }
+
 			active = false;
 			eventActive.Play();
 			orbTransform.localScale = new Vector3(0,0,0);

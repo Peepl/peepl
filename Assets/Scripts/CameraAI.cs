@@ -24,14 +24,15 @@ public class CameraAI : MonoBehaviour {
         DesertShader storm = GetComponent<DesertShader>();
         if(stormSeverity < 0)
 		{
-			//victory case
-			storm.perlinStrength = 0f;
-			storm.speedX = 0f;
-			storm.speedY = 0f;
+			//victory case 
+//			storm.perlinStrength = 0f;
+//			storm.speedX = 0f;
+//			storm.speedY = 0f;
 			//storm.desertColor = new Color(39f/255f* stormSeverity,19f/255f* stormSeverity,0);
-			storm.desertColor = new Color(208f/255f* stormSeverity*(day+0.2f),189f/255f* stormSeverity*(day+0.2f),89f/255f* stormSeverity*(day+0.2f));
-			storm.fogStrength = -stormSeverity;
-            storm.day = 1;
+//			storm.desertColor = new Color(208f/255f* stormSeverity*(day+0.2f),189f/255f* stormSeverity*(day+0.2f),89f/255f* stormSeverity*(day+0.2f));
+//			storm.fogStrength = ;
+ //           storm.day = 1;
+			storm.endFade = -stormSeverity/10f;
         }
         else
         {
