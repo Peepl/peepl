@@ -36,11 +36,12 @@ public class Oasis : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (!Active) return;
         
         if (collider.gameObject.tag.Equals("Person") &&
             collider.gameObject.GetComponent<PersonAI>().GetDistanceToLeader() < 40.0f )
         {
+            if (Friendly) collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
+            if (!Active) return;
             Active = false;
             if ( Friendly )
             {
@@ -56,6 +57,7 @@ public class Oasis : MonoBehaviour {
                 }
 				transform.Find("good").gameObject.SetActive(true);
                 Debug.Log("Friendly oasis triggered");
+                collider.gameObject.GetComponent<PersonAI>().IsSheltered = true;
 
 				guiController.EventTriggered("Oasis refreshes the tribe.");
 

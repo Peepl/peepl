@@ -68,7 +68,7 @@ public class SandStorm : MonoBehaviour {
 		else
 		{
 
-		    if ( System.DateTime.Now.Ticks - Starttime > 2 * Length )
+		    if ( System.DateTime.Now.Ticks - Starttime > 4 * Length )
 	        {
 	            Debug.Log("starting storm");
 	            Starttime = System.DateTime.Now.Ticks;

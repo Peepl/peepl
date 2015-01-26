@@ -45,7 +45,7 @@ public class Cavern : MonoBehaviour {
                 if (Random.Range(0.0f, 1.0f) < 0.05f )
                 {
                     GameObject swarm = GameObject.Find("Swarm");
-                    swarm.GetComponent<SwarmAI>().KillInRadius(transform.position, 25.0f, 0.1f);
+                    swarm.GetComponent<SwarmAI>().KillInRadius(transform.position, 50.0f, 0.1f);
                 }
             }
         }
