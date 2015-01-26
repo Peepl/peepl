@@ -7,7 +7,9 @@ public class PersonAI : MonoBehaviour {
 
     private Vector3 offset;
     private GameObject m_Swarm;
-    private float cachedAngle;
+    private float targetAngle;
+    private float currentAngle;
+    private static float MaxAngularVelo = 2.0f;
 
     public static float Radius = 30.0f;
     public static float MaxVelo = 7.0f;
@@ -28,6 +30,7 @@ public class PersonAI : MonoBehaviour {
 	void Start () {
         offset = GetRandomOffset();
         m_Swarm = GameObject.Find("Swarm");
+        currentAngle = 0.0f;
 	}
 	
     void OnCollisionEnter(Collision collision)
@@ -69,16 +72,24 @@ public class PersonAI : MonoBehaviour {
 
         if (rigidbody.velocity.magnitude > 4.0f)
         {
-            cachedAngle = Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x) + 90.0f;
+            targetAngle = 90.0f + 180.0f * Mathf.Atan2(rigidbody.velocity.z, rigidbody.velocity.x) / 3.14159f;
             //cachedAngle = Mathf.Atan2(1.0f, 0.0f);
             //Debug.Log(180.0f * cachedAngle / 3.14159f);
 
             //cachedAngle = Mathf.Atan2(-rigidbody.velocity.z, rigidbody.velocity.x);
         }
-
         transform.localEulerAngles = new Vector3(0.0f, transform.localEulerAngles.y, 0.0f);
 
-        transform.FindChild("people").localEulerAngles = new Vector3(0.0f, -transform.localEulerAngles.y - 180.0f * cachedAngle/3.14159f, 0.0f);
+        float angleChange = targetAngle - currentAngle;
+        while ( angleChange < -180.0f) angleChange += 360.0f;
+        while ( angleChange > 180.0f ) angleChange -= 360.0f;
+        //Debug.Log(targetAngle + " " + currentAngle + " " + angleChange);
+        if (angleChange > 0.0f) currentAngle += Mathf.Min(angleChange, MaxAngularVelo);
+        else currentAngle -= Mathf.Min(-angleChange, MaxAngularVelo);
+        currentAngle = (currentAngle + 360.0f) % 360.0f;
+
+        transform.FindChild("people").localEulerAngles = 
+            new Vector3(0.0f, -transform.localEulerAngles.y - currentAngle /*180.0f * currentAngle/3.14159f*/, 0.0f);
         //transform.FindChild("people").localEulerAngles = new Vector3(0.0f, 180.0f * cachedAngle / 3.14159f, 0.0f);
     }
 }
