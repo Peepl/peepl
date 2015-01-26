@@ -46,7 +46,7 @@ public class Oasis : MonoBehaviour {
                 int bonuspeople = Random.Range(2, 6);
                 for (int i = 0; i < bonuspeople; ++i)
                 {
-                    swarmai.Morale = 100.0f;
+                    swarmai.Morale = Mathf.Max(swarmai.Morale, 100.0f);
                     GameObject.Find("GameManager").GetComponent<GUIController>().MoraleChanged();
                 }
 				transform.Find("good").gameObject.SetActive(true);

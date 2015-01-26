@@ -107,6 +107,16 @@ public class SwarmAI : MonoBehaviour {
 			}
 			ended = true;
 		}
+
+        for (int i = 0; i < m_People.Count; ++i)
+        {
+            if ( (m_People[i].transform.position - Leader.transform.position).magnitude > 100.0f )
+            {
+                KillPerson(m_People[i]);
+                --i;
+            }
+        }
+
         for (int i = 0; i < m_People.Count-1; ++i)
         {
             for (int j = i + 1; j < m_People.Count; ++j)
